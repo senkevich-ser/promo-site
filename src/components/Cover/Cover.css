@@ -1,0 +1,28 @@
+.background {
+  position: relative;
+  width: 100%;
+  background-color: #d9d9d9;
+  height: 1200px;
+  overflow: hidden;
+}
+
+.ellipse1 {
+  position: absolute;
+  width: 377px;
+  height: 377px;
+  border-radius: 50%;
+  background-color: #5f6cbd;
+  left: -45px;
+  top: 177px;
+  filter: blur(150px);
+}
+.ellipse2 {
+  position: absolute;
+  left: 773px;
+  top: 539px;
+}
+.ellipse3 {
+  position: absolute;
+  left: 1223px;
+  top: 55px;
+}
