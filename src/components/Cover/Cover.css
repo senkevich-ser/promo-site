@@ -26,3 +26,15 @@
   left: 1223px;
   top: 55px;
 }
+.vector {
+  position: absolute;
+  width: 514px;
+  height: 678px;
+  top: -129px;
+  left: 1175px;
+  opacity: 80%;
+  background-image: url(../../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

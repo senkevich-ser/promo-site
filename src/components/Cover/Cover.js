@@ -10,6 +10,7 @@ function Cover() {
       <div className='ellipse1'></div>
       <div className='ellipse1 ellipse2'></div>
       <div className='ellipse1 ellipse3'></div>
+      <div className='vector'></div>
     </div>
     </>
   )
