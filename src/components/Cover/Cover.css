@@ -1,7 +1,7 @@
 .background {
   position: relative;
   width: 100%;
-  background-color: #d9d9d9;
+  background-color: #080B2A;
   height: 1200px;
   overflow: hidden;
 }
@@ -30,11 +30,49 @@
   position: absolute;
   width: 514px;
   height: 678px;
-  top: -129px;
-  left: 1175px;
-  opacity: 80%;
+  top: 110px;
+  left: 1203px;
+  /* opacity: 80%; */
   background-image: url(../../images/Vector.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
+}
+
+.stars {
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+  margin-bottom: -350px;
+  background: #042548;
+}
+.stars_1, .stars_2, .stars_3{
+  position: absolute;
+  top: 342px;
+  left: 45px;
+  width: 35px;
+  height: 40px;
+  opacity: 0;
+  background-image: url(../../images/Star\ 7.svg);
+  animation: stars 5s linear infinite;
+  background-repeat:no-repeat;
+}
+.stars_2 {
+  background-position: 100px 100px;
+  animation-delay: 1s;
+  background-image: url(../../images/Star\ 7.svg);
+  top: 342px;
+  left: 45px;
+
+}
+.stars_3 {
+  background-image: url(../../images/Star\ 9.png);
+  background-position: 350px 100px;
+  animation-delay: 3s;
+}
+
+
+@keyframes stars {
+  0%, 50%, 100% {opacity: 0;}
+  5%, 45% {opacity: 1;}
 }
