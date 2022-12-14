@@ -1,53 +1,62 @@
 import React from "react";
 import "./Cover.css";
+import Star from '../../images/Star7.svg'
 
 function Cover() {
   const params = {
-    amount: 200,
+    amount: 10,
     size: {
       min: 1,
       max: 5,
       giant: 9,
-    },
-    duration: {
-      min: 5,
-      max: 25,
-    },
+    }
   };
   const randomBetween = (a, b) => {
     return a + Math.floor(Math.random() * (b - a));
   };
 
-  function starStyles(){
+  function starStyles() {
+    let styles = [];
     for (let i = 0; i < params.amount; i++) {
       let size =
-        Math.round(Math.random() * 10) === 0
+        Math.round(Math.random() * 100) === 0
           ? params.size.giant
           : randomBetween(params.size.min, params.size.max);
 
-      let style= {
-        width: `${Math.floor(size)}px`,
-        height: `${Math.floor(size)}px`,
+
+      styles.push({
+        backgroundImage: 'url(../../images/Star7.svg)',
+        backgroundRepeat: 'noRepeat',
+        backgroundPosition: 'center',
+        backgroundSize: '100%',
+        position:'absolute',
+        display: 'inlineBlock',
+        width: `${Math.floor(size+10)}px`,
+        height: `${Math.floor(size+10)}px`,
         left: `${randomBetween(0, 100)}%`,
         top: `${randomBetween(0, 100)}%`,
-        boxShadow: `${"0 0 "}${size}px ${size / 2}px ${'#043668'}`,
-        animationDuration: randomBetween(params.duration.min, params.duration.max) + "s",
-      };
-      console.log(style)
-      return style;
+      });
     }
+    return styles;
   }
-  starStyles()
 
 
   return (
     <>
       <div className="background">
-        {/* <div className="ellipse1"></div>
+        <div className="ellipse1"></div>
         <div className="ellipse1 ellipse2"></div>
         <div className="ellipse1 ellipse3"></div>
-        <div className="vector"></div> */}
-        {}
+        <div className="vector"></div>
+        {starStyles().map((star,i) => {
+          return (
+            <img className="star"
+            key={i}
+              style={star}
+              src={Star}
+            />
+          );
+        })}
       </div>
     </>
   );
