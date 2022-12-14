@@ -15,7 +15,7 @@ function Cover() {
     },
   };
   const randomBetween = (a, b) => {
-    return a + Math.random() * (b - a);
+    return a + Math.floor(Math.random() * (b - a));
   };
 
   function starStyles(){
@@ -24,18 +24,20 @@ function Cover() {
         Math.round(Math.random() * 10) === 0
           ? params.size.giant
           : randomBetween(params.size.min, params.size.max);
-      let style;
 
-      return style = {
-        width: `${size}px`,
-        height: `${size}px`,
+      let style= {
+        width: `${Math.floor(size)}px`,
+        height: `${Math.floor(size)}px`,
         left: `${randomBetween(0, 100)}%`,
         top: `${randomBetween(0, 100)}%`,
         boxShadow: `${"0 0 "}${size}px ${size / 2}px ${'#043668'}`,
         animationDuration: randomBetween(params.duration.min, params.duration.max) + "s",
       };
+      console.log(style)
+      return style;
     }
   }
+  starStyles()
 
 
   return (
@@ -45,9 +47,7 @@ function Cover() {
         <div className="ellipse1 ellipse2"></div>
         <div className="ellipse1 ellipse3"></div>
         <div className="vector"></div> */}
-        <div className={starStyles}></div>
-        <div class="stars_2"></div>
-        <div class="stars_3"></div>
+        {}
       </div>
     </>
   );
