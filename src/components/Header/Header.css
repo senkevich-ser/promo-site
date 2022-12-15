@@ -1,0 +1,12 @@
+.header{
+  position: absolute;
+  width: 100%;
+}
+
+.header__icon{
+  position: absolute;
+  width: 191px;
+  height: 48px;
+  top:68px;
+  left: 128px;
+}

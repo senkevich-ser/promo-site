@@ -1,3 +1,24 @@
-.star{
-    position: absolute;
+.star {
+  position: absolute;
+  background-image: url(../../images/Star7.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  display: inline-block;
+  width: 11px;
+  height: 13px;
 }
+
+.star:nth-of-type(2n) {
+  width: 14px;
+  height: 17px;
+}
+.star:nth-of-type(3n) {
+    width: 19px;
+    height: 40px;
+  }
+.star:nth-of-type(5n) {
+    width: 22px;
+    height: 40px;
+  }

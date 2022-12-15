@@ -1,11 +1,13 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import './Star.css'
+import star from '../../images/Star7.svg';
+import './Star.css';
 
 
-function Star() {
+function Star(props) {
 
   return (
-    <div className='star'></div>
+    <img src={star} style={props.style} className='star'/>
   )
 }
 

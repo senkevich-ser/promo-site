@@ -1,6 +1,6 @@
 import React from "react";
 import "./Cover.css";
-import Star from '../../images/Star7.svg'
+import Star from "../Star/Star";
 
 function Cover() {
   const params = {
@@ -25,14 +25,8 @@ function Cover() {
 
 
       styles.push({
-        backgroundImage: 'url(../../images/Star7.svg)',
-        backgroundRepeat: 'noRepeat',
-        backgroundPosition: 'center',
-        backgroundSize: '100%',
-        position:'absolute',
-        display: 'inlineBlock',
-        width: `${Math.floor(size+10)}px`,
-        height: `${Math.floor(size+10)}px`,
+        /* width: `${Math.floor(size+10)}px`,
+        height: `${Math.floor(size+10)}px`, */
         left: `${randomBetween(0, 100)}%`,
         top: `${randomBetween(0, 100)}%`,
       });
@@ -50,11 +44,7 @@ function Cover() {
         <div className="vector"></div>
         {starStyles().map((star,i) => {
           return (
-            <img className="star"
-            key={i}
-              style={star}
-              src={Star}
-            />
+            <Star style={star} key={i}/>
           );
         })}
       </div>
