@@ -1,6 +1,11 @@
 .header{
   position: absolute;
   width: 100%;
+  height: 930px;
+  top:0;
+  left: 0;
+  margin: 0 auto;
+  border: white solid 2px;
 }
 
 .header__icon{
@@ -9,4 +14,7 @@
   height: 48px;
   top:68px;
   left: 128px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }

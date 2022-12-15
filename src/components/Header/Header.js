@@ -1,6 +1,6 @@
 
 import React from 'react';
-import NFTicon from '../../images/NFTicon.jpeg';
+import NFTicon from '../../images/NFTicon.svg';
 import './Header.css';
 
 

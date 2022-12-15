@@ -1,0 +1,23 @@
+.ellipse {
+    position: absolute;
+  width: 377px;
+  height: 377px;
+  border-radius: 50%;
+  background-color: #5f6cbd;
+  left: -45px;
+  top: 177px;
+  filter: blur(150px);
+  }
+
+  .ellipse:nth-of-type(2n) {
+    width: 14px;
+    height: 17px;
+  }
+  .ellipse:nth-of-type(3n) {
+      width: 19px;
+      height: 40px;
+    }
+  .ellipse:nth-of-type(5n) {
+      width: 22px;
+      height: 40px;
+    }

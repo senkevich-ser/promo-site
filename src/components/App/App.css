@@ -1,4 +1,29 @@
+.body{
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #080B2A;
+  }
+
+  .root{
+    background-color: inherit;
+    margin: 0 auto;
+  }
+
 .app {
-max-width: 1600px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    max-width: 1600px;
+    margin:auto;
 }
 
+@media screen and (max-width: 950px) {
+    .nav-tab {
+      flex-flow: column nowrap;
+    }
+    .nav-tab__btn {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }

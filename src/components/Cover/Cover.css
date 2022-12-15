@@ -2,8 +2,7 @@
   position: relative;
   width: 100%;
   background-color: #080B2A;
-  height: 1200px;
-  overflow: hidden;
+  height: 5800px;
 }
 
 .ellipse1 {
@@ -12,7 +11,7 @@
   height: 377px;
   border-radius: 50%;
   background-color: #5f6cbd;
-  left: -45px;
+  left: -5em;
   top: 177px;
   filter: blur(150px);
 }
@@ -31,48 +30,40 @@
   width: 514px;
   height: 678px;
   top: 110px;
-  left: 1203px;
+  left: 1003px;
   /* opacity: 80%; */
   background-image: url(../../images/Vector.svg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  background-position: left 70%;
+  /* background-size: 100%; */
 }
 
-.stars {
-  position: relative;
-  overflow: hidden;
-  height: 350px;
-  margin-bottom: -350px;
-  background: #042548;
+@media screen and (max-width: 1700px) {
+  .vector {
+    left: 59em;
+  }
+  .ellipse1 {
+    left: 0;
+  }
+  .ellipse2 {
+    left: 473px;
+    top: 539px;
+  }
+  .ellipse3 {
+    left: 923px;
+    top: 55px;
+  }
 }
-.stars_1, .stars_2, .stars_3{
-  position: absolute;
-  top: 342px;
-  left: 45px;
-  width: 35px;
-  height: 40px;
-  opacity: 0;
-  background-image: url(../../images/Star7.svg);
-  animation: stars 5s linear infinite;
-  background-repeat:no-repeat;
-}
-.stars_2 {
-  background-position: 100px 100px;
-  animation-delay: 1s;
-  background-image: url(../../images/Star7.svg);
-  top: 342px;
-  left: 45px;
-
-}
-.stars_3 {
-  background-image: url(../../images/Star9.png);
-  background-position: 350px 100px;
-  animation-delay: 3s;
-}
-
-
-@keyframes stars {
-  0%, 50%, 100% {opacity: 0;}
-  5%, 45% {opacity: 1;}
+@media screen and (max-width: 1500px) {
+  .vector {
+    left: 56em;
+  }
+  .ellipse2 {
+    left: 273px;
+    top: 539px;
+  }
+  .ellipse3 {
+    left: 823px;
+    top: 55px;
+  }
 }

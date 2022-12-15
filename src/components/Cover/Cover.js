@@ -1,10 +1,19 @@
 import React from "react";
 import "./Cover.css";
-import Star from "../Star/Star";
+import Star from "./Star/Star";
 
 function Cover() {
-  const params = {
-    amount: 10,
+  const starsParams = {
+    amount: 50,
+    size: {
+      min: 1,
+      max: 5,
+      giant: 9,
+    }
+  };
+
+  const ellipseParams = {
+    amount: 30,
     size: {
       min: 1,
       max: 5,
@@ -15,13 +24,13 @@ function Cover() {
     return a + Math.floor(Math.random() * (b - a));
   };
 
-  function starStyles() {
+  function starStyles(params) {
     let styles = [];
     for (let i = 0; i < params.amount; i++) {
-      let size =
+      /* let size =
         Math.round(Math.random() * 100) === 0
           ? params.size.giant
-          : randomBetween(params.size.min, params.size.max);
+          : randomBetween(params.size.min, params.size.max); */
 
 
       styles.push({
@@ -42,7 +51,7 @@ function Cover() {
         <div className="ellipse1 ellipse2"></div>
         <div className="ellipse1 ellipse3"></div>
         <div className="vector"></div>
-        {starStyles().map((star,i) => {
+        {starStyles(starsParams).map((star,i) => {
           return (
             <Star style={star} key={i}/>
           );
