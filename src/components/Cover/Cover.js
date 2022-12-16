@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Children } from "react";
 import "./Cover.css";
 import Star from "./Star/Star";
 
-function Cover() {
+function Cover({children}) {
   const starsParams = {
     amount: 50,
     size: {
@@ -47,6 +47,7 @@ function Cover() {
   return (
     <>
       <div className="background">
+        {children}
         <div className="ellipse1"></div>
         <div className="ellipse1 ellipse2"></div>
         <div className="ellipse1 ellipse3"></div>

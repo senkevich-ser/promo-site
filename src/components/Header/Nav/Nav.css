@@ -5,3 +5,9 @@
 .ant-btn-circle {
   background-image: url(../../../images/roundButtonIcon.svg);
 }
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}

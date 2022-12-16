@@ -8,8 +8,7 @@ function App() {
 
   return (
     <div className='app'>
-      <Cover/>
-      <Header/>
+      <Cover children={<Header/>}/>
       </div>
 
   )
