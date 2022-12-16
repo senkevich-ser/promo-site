@@ -1,25 +1,24 @@
 import React from 'react';
 import { Button, Space } from 'antd';
+import { circleButtonStyles,roundButtonStyles } from '../styles';
 import './Nav.css';
 
 
 function Nav() {
-  const ButtonContainer = styled.div`
-  .ant-btn-text {
-    background-color: red;
+  const styles = {
+    color:'#FFFFFF'
   }
-`;
   return (
     <nav className='nav'>
       <Space  className='nav__mainBlock'>
-    <Button type='text'>Discover</Button>
+    <Button /* style={styles} */type='text'>Discover</Button>
     <Button type='text'>Marketplace</Button>
     <Button type='text'>How it Work</Button>
     </Space >
     <div className='nav__searchBlock'>
     <Button></Button>
-    <Button></Button>
-    <Button></Button>
+    <Button type="primary" style={roundButtonStyles} shape="round" >Connect Wallet</Button>
+    <Button type="primary" style={circleButtonStyles}shape="circle" />
     </div>
 
     </nav>
