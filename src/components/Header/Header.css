@@ -7,14 +7,3 @@
   margin: 0 auto;
   border: white solid 2px;
 }
-
-.header__icon{
-  position: absolute;
-  width: 191px;
-  height: 48px;
-  top:68px;
-  left: 128px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-}
