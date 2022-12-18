@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React  from "react";
 import "./Cover.css";
 import Star from "./Star/Star";
 
@@ -12,14 +12,14 @@ function Cover({children}) {
     }
   };
 
-  const ellipseParams = {
+  /* const ellipseParams = {
     amount: 30,
     size: {
       min: 1,
       max: 5,
       giant: 9,
     }
-  };
+  }; */
   const randomBetween = (a, b) => {
     return a + Math.floor(Math.random() * (b - a));
   };

@@ -5,6 +5,7 @@ const circleButtonStyles = {
   backgroundSize: '40%',
   width: '54px',
   height: '54px',
+  /* alignSelf:'center' */
   /* backgroundImage:'url(../../images/roundButtonIcon.svg)' */
 }
 

@@ -1,0 +1,17 @@
+.ant-btn-text {
+  color: #ffffff;
+}
+
+.ant-btn-circle {
+  background-image: url(../../images/roundButtonIcon.svg);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.nav__searchBlock {
+  display: flex;
+  align-items: center;
+}

@@ -5,9 +5,6 @@ import './Nav.css';
 
 
 function Nav() {
-  const styles = {
-    color:'#FFFFFF'
-  }
   return (
     <nav className='nav'>
       <Space  className='nav__mainBlock'>
