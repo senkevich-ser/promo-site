@@ -1,34 +1,59 @@
-.main{
-display: flex;
-flex-direction: row;
-margin: 0 126px 0 161px;
-}
-.main__info{
-color: #ffffff;
-font-family: "Clash Display";
+.main {
+  display: flex;
+  flex-direction: row;
+  margin: 0 126px 0 161px;
 }
 
-.main__titles{
-  font-family: "Clash Display";
+.main__info {
+  color: #ffffff;
+  padding-top: 130px;
+
 }
 
-.main__titles-bold{
-font-size: 80px;
-line-height: 90px;
-font-weight: 600;
+.main__titles {
 }
 
-.main__titles-normal{
+.main__titles-bold {
+  margin: 0;
+  font-family: 'ClashDisplay-Semibold';
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 600;
+}
+
+.main__titles-normal {
+  margin: 0;
+  font-family: 'ClashDisplay-Regular';
   font-size: 80px;
   line-height: 90px;
   font-weight: 400;
-  }
-
-
-.main__cards{
-
 }
 
-.card{
-
+.main__discharge{
+  width: 427px;
+  height: 38px;
+  margin-top: 24px;
+  background-image: url('../../../images/discharge.svg'),url('../../../images/discharge2.svg');
+  background-repeat: no-repeat;
+  background-position: left top, center;
+  background-size: 100%;
+  z-index: 3;
 }
+
+.main__description{
+font-family: Inter;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+margin-top: 32px;
+}
+
+.main__connectButtons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main__cards {}
+
+.card {}

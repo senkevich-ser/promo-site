@@ -1,4 +1,6 @@
 import React from 'react';
+import { Button } from 'antd';
+import { circleButtonStyles,mainRoundButtonStyles } from '../../styles';
 import './Main.css';
 
 
@@ -12,12 +14,18 @@ function Main() {
         <h2 className='main__titles-normal'> Marketplace</h2>
       </div>
       <div className='main__discharge'></div>
+      <h3 className='main__description'>The largest and unique Super rare marketplace
+    <br/>For crypto-collectibles</h3>
+    <div className='main__connectButtons'>
+
+    </div>
+    <div className='main__buttonsTitles'></div>
+    <div className='main__connectButtons'>
+    <Button type="primary" style={mainRoundButtonStyles} shape="round" >Connect Wallet</Button>
+    <Button type="primary" style={circleButtonStyles}shape="circle" />
+    </div>
     </dev>
     <dev className='main__cards'></dev>
-    <p className='main__description'></p>
-    <div className='main__connectButtons'></div>
-    <div className='main__buttonsTitles'></div>
-    <div className='main__connectButtons'></div>
     <dev className='card'></dev>
     </section>
   )

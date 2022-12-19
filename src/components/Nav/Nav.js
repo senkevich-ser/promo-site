@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Space } from 'antd';
-import { circleButtonStyles,roundButtonStyles } from '../styles';
+import { circleButtonStyles,headerRoundButtonStyles } from '../styles';
 import './Nav.css';
 
 
@@ -14,7 +14,7 @@ function Nav() {
     </Space >
     <div className='nav__searchBlock'>
     <Button></Button>
-    <Button type="primary" style={roundButtonStyles} shape="round" >Connect Wallet</Button>
+    <Button type="primary" style={headerRoundButtonStyles} shape="round" >Connect Wallet</Button>
     <Button type="primary" style={circleButtonStyles}shape="circle" />
     </div>
 

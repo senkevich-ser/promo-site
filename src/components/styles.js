@@ -5,11 +5,9 @@ const circleButtonStyles = {
   backgroundSize: '40%',
   width: '54px',
   height: '54px',
-  /* alignSelf:'center' */
-  /* backgroundImage:'url(../../images/roundButtonIcon.svg)' */
 }
 
-const roundButtonStyles = {
+const headerRoundButtonStyles = {
   backgroundColor: 'inherit',
   width: '178px',
   height: '54px',
@@ -22,7 +20,19 @@ const roundButtonStyles = {
   textAlign: 'center',
 
 }
+const mainRoundButtonStyles = {
+  backgroundColor: '#15BFFD',
+  width: '178px',
+  height: '54px',
+  boxSizing: 'border-box',
+  color: '#FFFFFF',
+  weight: "500px",
+  fontSize: '20px',
+  lineHeigh: '24px',
+  textAlign: 'center',
+
+}
 
 
 
-export { circleButtonStyles, roundButtonStyles }
+export { circleButtonStyles, headerRoundButtonStyles,mainRoundButtonStyles }
