@@ -5,11 +5,12 @@ const circleButtonStyles = {
   backgroundSize: '40%',
   width: '54px',
   height: '54px',
+  /* backgroundImage: "url()", */
 }
 
 const headerRoundButtonStyles = {
   backgroundColor: 'inherit',
-  width: '178px',
+  width: '186px',
   height: '54px',
   border: ' solid 2px #15BFFD',
   boxSizing: 'border-box',
@@ -22,7 +23,7 @@ const headerRoundButtonStyles = {
 }
 const mainRoundButtonStyles = {
   backgroundColor: '#15BFFD',
-  width: '178px',
+  width: '186px',
   height: '54px',
   boxSizing: 'border-box',
   color: '#FFFFFF',
