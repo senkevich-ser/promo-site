@@ -1,0 +1,34 @@
+.main{
+display: flex;
+flex-direction: row;
+margin: 0 126px 0 161px;
+}
+.main__info{
+color: #ffffff;
+font-family: "Clash Display";
+}
+
+.main__titles{
+  font-family: "Clash Display";
+}
+
+.main__titles-bold{
+font-size: 80px;
+line-height: 90px;
+font-weight: 600;
+}
+
+.main__titles-normal{
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 400;
+  }
+
+
+.main__cards{
+
+}
+
+.card{
+
+}

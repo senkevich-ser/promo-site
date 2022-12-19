@@ -13,4 +13,13 @@
   font-family: "Inter";
   src: url(./fonts/Inter-Regular.ttf);
   font-weight: normal;
+
 }
+
+@font-face {
+  font-family: "Clash Display";
+  src: url(./fonts/ClashDisplay-Bold.ttf);
+  font-weight: 600;
+}
+
+
