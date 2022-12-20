@@ -1,6 +1,11 @@
 import React from 'react';
 import { Button } from 'antd';
-import { circleButtonStyles,mainRoundButtonStyles } from '../../styles';
+import Card from '../../Card/Card';
+import {
+  mainRoundButtonStyles,
+  createMainButtonStyles,
+  chiceBlueButtonStyles,
+  chiceTransparentButtonStyles } from './styles';
 import './Main.css';
 
 
@@ -17,16 +22,24 @@ function Main() {
       <h3 className='main__description'>The largest and unique Super rare marketplace
     <br/>For crypto-collectibles</h3>
     <div className='main__connectButtons'>
-
-    </div>
-    <div className='main__buttonsTitles'></div>
-    <div className='main__connectButtons'>
     <Button type="primary" style={mainRoundButtonStyles} shape="round" >Connect Wallet</Button>
-    <Button type="primary" style={circleButtonStyles}shape="circle" />
+    <Button type="text" style={createMainButtonStyles}shape="round" />
+    </div>
+    <div className='main__choiceButtonsTitles'>Last 7 days popular search</div>
+    <div className='main__choiceButtons'>
+    <Button type="primary" style={chiceBlueButtonStyles} shape="round" >All</Button>
+    <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Music</Button>
+    <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >3D Abstract</Button>
+    <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Game</Button>
+    <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Sprots</Button>
+    <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Cartoon</Button>
+    <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Virtual World</Button>
+    <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Classic</Button>
     </div>
     </div>
-    <div className='main__cards'></div>
-    <div className='card'></div>
+    <div className='main__cards'>
+      <Card/>
+    </div>
     </section>
   )
 }

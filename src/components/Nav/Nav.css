@@ -11,34 +11,17 @@
   flex-direction: row;
   justify-content: flex-end;
 }
+.nav__mainBlock{
+  display: flex;
+  align-items: center;
+  margin-right: 202px;
+}
 .nav__searchBlock {
   display: flex;
   align-items: center;
-}
-.nav__searchButton{
-  background-color: inherit;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 110%;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-image: url('../../images/searchButton.svg');
-  border: none;
-  box-sizing: border-box;
 }
 
 .nav__searchButton:hover{
   transform: scale(1.1,1.1);
   cursor: pointer;
-}
-.nav__roundButton{
-  background-color: #15BFFD;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40%;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background-image: url('../../images/roundButtonIcon.svg');
 }

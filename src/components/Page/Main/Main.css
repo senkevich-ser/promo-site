@@ -45,13 +45,27 @@ font-family: Inter;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-margin-top: 32px;
+margin: 32px 0 0 0;
 }
 
 .main__connectButtons{
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 32px 0 0 0;
+}
+
+.main__choiceButtonsTitles{
+  margin: 40px 0 0 0;
+  font-family: 'Inter';
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.main__choiceButtons{
+  margin: 40px 0 0 0;
+  max-width: 466px;
 }
 
 .main__cards {}
