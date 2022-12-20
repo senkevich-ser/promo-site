@@ -1,11 +1,4 @@
 const circleButtonStyles = {
-  backgroundColor: '#15BFFD',
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'center',
-  backgroundSize: '40%',
-  width: '54px',
-  height: '54px',
-  /* backgroundImage: "url()", */
 }
 
 const headerRoundButtonStyles = {
@@ -19,6 +12,7 @@ const headerRoundButtonStyles = {
   fontSize: '20px',
   lineHeigh: '24px',
   textAlign: 'center',
+  margin:'0 20px',
 
 }
 const mainRoundButtonStyles = {

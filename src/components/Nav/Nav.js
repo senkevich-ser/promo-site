@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Space } from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
-import { circleButtonStyles,headerRoundButtonStyles } from '../styles';
+import { headerRoundButtonStyles } from '../styles';
 import './Nav.css';
 
 
@@ -14,11 +13,10 @@ function Nav() {
     <Button type='text'>How it Work</Button>
     </Space >
     <div className='nav__searchBlock'>
-    <Button type="primary" shape="circle" style={circleButtonStyles}/>
+    <button className='nav__searchButton'/>
     <Button type="primary" style={headerRoundButtonStyles} shape="round" >Connect Wallet</Button>
-    <Button type="primary" style={circleButtonStyles}shape="circle"></Button>
+    <button className='nav__roundButton'/>
     </div>
-
     </nav>
   )
 }
