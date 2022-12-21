@@ -15,6 +15,7 @@
   left: -5em;
   top: 177px;
   filter: blur(150px);
+  z-index: -1;
 }
 .ellipse2 {
   position: absolute;

@@ -7,6 +7,7 @@ import './Card.css'
 function Card(props) {
   return (
     <div className={`card ${props.style}`}>
+      <div className= 'card__effect'></div>
       <div className='card__worksQty'>
         <p className='card__qty'>210</p>
         <span>Digital Artwork</span>

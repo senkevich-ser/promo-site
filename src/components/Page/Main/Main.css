@@ -1,7 +1,9 @@
 .main {
   display: flex;
   flex-direction: row;
+  padding-bottom: 110px;
   margin: 0 126px 0 161px;
+  position: relative;
 }
 
 .main__info {
@@ -19,6 +21,7 @@
   font-size: 80px;
   line-height: 90px;
   font-weight: 600;
+  z-index: 2;
 }
 
 .main__titles-normal {

@@ -1,0 +1,53 @@
+.choose {
+  color: #ffffff;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  height: 528px;
+}
+
+.choose__effect {
+  max-width: 100vw;
+  backdrop-filter: blur(11px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.04);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.choose__image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 427px;
+  height: 427px;
+  background-image: url('../../../images/chooseCircle.svg');
+  margin: 50px 82px 50px 202px;
+}
+
+.choose__info {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 121px 0 143px 0;
+  z-index: 2;
+}
+.choose__title{
+  font-family: 'ClashDisplay-Semibold';
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 60px;
+}
+
+.choose__paragraph{
+  font-family: 'ClashDisplay-Regular';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
