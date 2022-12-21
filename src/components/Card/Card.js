@@ -4,9 +4,9 @@ import Jac from '../../images/Jac.jpg'
 import './Card.css'
 
 
-function Card() {
+function Card(props) {
   return (
-    <div className='card'>
+    <div className={`card ${props.style}`}>
       <div className='card__worksQty'>
         <p className='card__qty'>210</p>
         <span>Digital Artwork</span>

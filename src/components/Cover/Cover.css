@@ -1,8 +1,9 @@
 .background {
-  position: relative;
+  position: absolute;
   width: 100%;
   background-color: #080B2A;
   height: 5800px;
+  z-index: 0;
 }
 
 .ellipse1 {

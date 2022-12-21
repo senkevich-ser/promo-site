@@ -39,6 +39,7 @@ function Main() {
     </div>
     <div className='main__cards'>
       <Card/>
+      <Card style='card_rotate'/>
     </div>
     </section>
   )

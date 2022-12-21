@@ -1,4 +1,10 @@
+.main__cards{
+  position: relative;
+}
+
 .card {
+  background-color: #080B2Ab3;
+  /* background-color: rgba(255, 0, 0, 0.5); */
   display: flex;
   position: relative;
   color: #ffffff;
@@ -7,7 +13,10 @@
   flex-direction: column;
   justify-content: space-around;
   border-radius: 16px;
-  border: 1px solid #15bffd; /*2*/
+  border: 1px solid #15bffd;
+  z-index: 1;
+  margin-left: 100px;
+  /* opacity: 70%; */
 }
 
 .card__qty {
@@ -41,12 +50,14 @@
 }
 
 .card__price{
+  opacity: 100%;
   margin: 0 7px 0 0;
 }
 .card__image {
   width: 268px;
   height: 241px;
   margin: 0 auto;
+  filter: blur(1px);
 }
 
 .card__NFTname{
@@ -79,4 +90,11 @@
   background-size: 100%;
   border-radius: 50%;
   margin-right: 8px;
+}
+
+.card_rotate{
+position: absolute;
+top:115px;
+left:265px;
+transform:rotate(26.5deg);
 }
