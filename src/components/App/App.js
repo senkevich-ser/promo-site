@@ -5,7 +5,11 @@ import Page from '../Page/Page';
 
 
 function App() {
-  fetch('https://dummyjson.com/products/1')
+  fetch('https://dummyjson.com/products')
+.then(res => res.json())
+.then((res)=>{console.log(res.products[3])});
+
+fetch('https://dummyjson.com/users')
 .then(res => res.json())
 .then(console.log);
   return (
