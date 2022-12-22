@@ -66,7 +66,9 @@
   width: 268px;
   height: 241px;
   margin: 0 auto;
-  /* filter: blur(1px); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .card__NFTname{
@@ -89,6 +91,7 @@
   margin-left: 16px;
   color: #968BA1;
   margin-left: 16px;
+  width: 100%;
 }
 
 .card__ownerAvatar{
