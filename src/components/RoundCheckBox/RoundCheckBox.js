@@ -10,7 +10,7 @@ function RoundCheckBox(props) {
       <input
         className="round-btn__input"
         type="checkbox"
-        checked={props.isChecked || false}
+        /* checked={props.isChecked || false} */
         onChange={handleChange}
       />
 

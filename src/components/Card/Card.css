@@ -72,14 +72,14 @@
 }
 
 .card__image::before{
-  content: "";
+  /* content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #764abc;
-  z-index: 0;
+  z-index: 0; */
 }
 
 .card__NFTname{
@@ -92,29 +92,6 @@
   margin-left: 16px;
 }
 
-.card__owner{
-  display: flex;
-  flex-direction: row;
-  font-family: 'Poppins-Medium';
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 500;
-  margin-left: 16px;
-  color: #968BA1;
-  margin-left: 16px;
-  width: 100%;
-}
-
-.card__ownerAvatar{
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  border-radius: 50%;
-  margin-right: 8px;
-}
-
 .card_type_rotate{
 position: absolute;
 top:115px;
@@ -123,7 +100,13 @@ transform:rotate(24deg);
 margin: 0;
 }
 
-.card_type_auction{
-width: 384px;
-height: 460px;
+.card_type_auction {
+  width: 384px;
+  height: 460px;
+  padding: 0 16px 10px;
 }
+
+/* .card_type_auction{
+  width: 384px;
+  height: 460px;
+  } */

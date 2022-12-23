@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../../Card/Card';
+import CardAuction from '../../CardAuction/CardAuction'
 import './Auction.css'
 
 
@@ -15,7 +16,7 @@ function Auction(props) {
       <div className='auction__card-container'>
         {props.cards.map((card,i) => {
           return (
-            <Card dataCard={card} style='card_type_auction' key={i}/>
+            <Card children={<CardAuction dataCard={card}/>} dataCard={card} style='card_type_auction' key={i}/>
           );
         })}
       </div>

@@ -33,7 +33,7 @@ function Page() {
     <Header/>
     <Main cards={allCards.slice(0,2)}/>
     <Choose/>
-    <Auction cards={allCards.slice(0,12)}/>
+    <Auction cards={allCards.slice(4,16)}/>
     </div>
   )
 }

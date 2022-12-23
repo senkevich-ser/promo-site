@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'antd';
 import Card from '../../Card/Card';
+import CardMain from '../../CardMain/CardMain';
 import {
   mainRoundButtonStyles,
   createMainButtonStyles,
@@ -41,11 +42,11 @@ function Main(props) {
         {props.cards.map((card, i) => {
           if (i === 0) {
             return (
-              <Card dataCard={card} style='' key={i} />
+              <Card children={<CardMain dataCard={card}/>} dataCard={card} style='' key={i} />
             )
           } else {
             return (
-              <Card dataCard={card} style='card_type_rotate' key={i} />
+              <Card children={<CardMain dataCard={card} />} dataCard={card} style='card_type_rotate' key={i} />
             )
           }
         })}

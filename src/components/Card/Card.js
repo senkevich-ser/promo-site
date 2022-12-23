@@ -20,14 +20,7 @@ function change(){
         <p className='card__price'>{props.dataCard.discountPercentage}</p>
         <span className='card__ethereumTitle'>ETH</span>
       </div>
-      <div style={{backgroundImage:`url(${props.dataCard.images[0]})`
-
-      }} className='card__image' ></div>
-      <h3 className='card__NFTname'>{props.dataCard.title}</h3>
-      <div className='card__owner'>
-        <RoundCheckBox isChecked={true} cardId={props.id} onChange={change}/>
-        <Button style={{ width: '40%' }} type="primary">Primary Button</Button>
-      </div>
+      {props.children}
     </div>
   )
 }
