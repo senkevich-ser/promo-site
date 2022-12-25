@@ -1,17 +1,19 @@
-.auction{
-display: flex;
-flex-direction: column;
-color:#ffffff;
-padding-top: 160px;
+.auction {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  padding-top: 160px;
+  justify-content: center;
+  align-items: center;
 }
-.auction__title{
-  font-family: 'ClashDisplay-Semibold';
+.auction__title {
+  font-family: "ClashDisplay-Semibold";
   font-weight: 600;
   font-size: 32px;
   line-height: 36px;
   margin: 0 auto;
 }
-.auction__subtitle{
+.auction__subtitle {
   font-family: "Inter";
   font-weight: normal;
   font-size: 16px;
@@ -21,10 +23,10 @@ padding-top: 160px;
   text-align: center;
 }
 
-.auction__card-container{
-  padding-top: 60px;
+.auction__card-container {
+  padding: 60px 0;
   max-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));

@@ -1,6 +1,8 @@
 import React from 'react';
 import Card from '../../Card/Card';
-import CardAuction from '../../CardAuction/CardAuction'
+import CardAuction from '../../CardAuction/CardAuction';
+import { headerRoundButtonStyles } from '../Main/styles';
+import { Button , Space } from 'antd';
 import './Auction.css'
 
 
@@ -20,6 +22,9 @@ function Auction(props) {
           );
         })}
       </div>
+      <Space wrap>
+      <Button type="primary" style={headerRoundButtonStyles} shape="round" >More</Button>
+      </Space>
     </section>
   )
 }

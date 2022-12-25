@@ -1,5 +1,6 @@
 .main__cards{
   position: relative;
+  margin-left: 100px;
 }
 
 .card {
@@ -15,7 +16,6 @@
   border-radius: 16px;
   border: 1px solid #15bffd;
   z-index: 1;
-  margin-left: 100px;
   /* opacity: 70%; */
 }
 .card__effect{
