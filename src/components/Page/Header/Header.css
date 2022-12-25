@@ -2,5 +2,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin:40px 126px 0 161px;
+  max-width: 1200px;
+  margin: 40px auto 0;
 }

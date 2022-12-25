@@ -23,7 +23,7 @@ function Auction(props) {
         })}
       </div>
       <Space wrap>
-      <Button type="primary" style={headerRoundButtonStyles} shape="round" >More</Button>
+      <Button type="primary" style={headerRoundButtonStyles} shape="round" >Explore more</Button>
       </Space>
     </section>
   )
