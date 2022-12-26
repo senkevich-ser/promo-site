@@ -9,7 +9,7 @@
 .footer__ColumnWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .footer__copyrightText {
   font-family: "ClashDisplay-Regular";
@@ -24,10 +24,11 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 24.6px;
+  margin-bottom: 20px;
 }
 .footer__subtitles {
   list-style: none;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
 }
 .socialLinks{
