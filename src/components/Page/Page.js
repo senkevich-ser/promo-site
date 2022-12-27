@@ -5,31 +5,29 @@ import Main from './Main/Main';
 import Choose from './Choose/Chose';
 import Auction from './Auction/Auction';
 import Footer from './footer/Footer';
+import Spinner from '../Spinner/Spinner';
 import './Page.css';
 
 
 function Page() {
 
   const [allCards, setAllCards] = useState([]);
-  const [allUsers, setAllUsers] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
+    setIsLoading(true);
     fetch('https://dummyjson.com/products')
 .then(res => res.json())
 .then((res)=>{
-  setAllCards(res.products)
+  setAllCards(res.products);
+  setIsLoading(false);
 });
   }, []);
 
-  useEffect(() => {
-    fetch('https://dummyjson.com/users')
-.then(res => res.json())
-.then((res)=>{
-  setAllUsers(res.users)
-});
-  }, []);
 
-  return (
+  return isLoading ? (
+    <Spinner />
+  ) : (
     <div className='page'>
     <Header/>
     <Main cards={allCards.slice(0,2)}/>
