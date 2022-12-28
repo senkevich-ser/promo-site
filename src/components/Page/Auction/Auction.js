@@ -8,7 +8,9 @@ import './Auction.css'
 
 
 function Auction(props) {
-
+  function onClick(dataCard){
+    console.log(dataCard)
+  }
 
   return (
     <section className='auction'>
@@ -18,7 +20,7 @@ function Auction(props) {
       <div className='auction__card-container'>
         {props.cards.map((card,i) => {
           return (
-            <Card children={<CardAuction dataCard={card}/>} dataCard={card} style='card_type_auction' key={i}/>
+            <Card children={<CardAuction onClick={onClick} dataCard={card}/>} dataCard={card} style='card_type_auction' key={i}/>
           );
         })}
       </div>

@@ -16,7 +16,7 @@ function Nav() {
     </div >
     <div className='nav__searchBlock'>
     <Button type="primary" style={headerSearchButtonStyles} shape="circle" ></Button>
-    <Button type="primary" style={headerRoundButtonStyles} shape="round" >Connect Wallet</Button>
+    <Button type="primary" style={headerRoundButtonStyles} shape="round" >Favorites Goods</Button>
     <Button type="primary" style={circleButtonStyles} shape="circle" ></Button>
     </div>
     </nav>

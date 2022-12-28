@@ -1,13 +1,9 @@
 import React from 'react';
-import { Button } from 'antd';
-import RoundCheckBox from '../RoundCheckBox/RoundCheckBox'
 import './Card.css'
 
 
 function Card(props) {
-function change(){
 
-}
   return (
     <div className={`card ${props.style}`}>
       <div className='card__effect'></div>

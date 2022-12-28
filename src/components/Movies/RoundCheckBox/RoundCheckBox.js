@@ -3,7 +3,7 @@ import './RoundCheckBox.css';
 
 function RoundCheckBox(props) {
   const handleChange = () => {
-    props.onChange(props.dataCard);
+    props.onChange(props.movieId);
   };
   return (
     <label className="round-btn">

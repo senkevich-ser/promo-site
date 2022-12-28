@@ -1,13 +1,37 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import { Button } from 'antd';
 import RoundCheckBox from '../RoundCheckBox/RoundCheckBox'
 import './CardAuction.css'
 
 
 function CardAuction(props) {
-function change(){
+  const [isChecked, setIsChecked] = useState(false);
 
+
+
+  /* useEffect(() => {
+    if(JSON.parse(localStorage.getItem('savedCards'))){
+      JSON.parse(localStorage.getItem('savedCards')).some((card)=>{
+        setIsChecked(card.id===props.dataCard.id)
+      })
 }
+  }, []); */
+
+function change(card){
+if(!JSON.parse(localStorage.getItem('savedCards'))){
+localStorage.setItem('savedCards',JSON.stringify([card]))
+} else {
+  let savedArr=JSON.parse(localStorage.getItem('savedCards'));
+  savedArr.push(card)
+  localStorage.setItem('savedCards',JSON.stringify(savedArr));
+  setIsChecked(true)
+}
+}
+
+
+
+
+
   return (
     <>
       <div  className='cardAuction__images' >
@@ -25,8 +49,8 @@ function change(){
       </div>
       <h3 className='card__brandName'>{props.dataCard.title}</h3>
       <div className='card__buttons'>
-        <RoundCheckBox isChecked={false} cardId={props.id} onChange={change}/>
-        <Button style={{ width: '50%' }} type="primary">Добавить в корзину</Button>
+        <RoundCheckBox isChecked={isChecked} dataCard={props.dataCard} onChange={change}/>
+        <Button  style={{ width: '50%' }} type="primary">Добавить в корзину</Button>
       </div>
     </>
   )
