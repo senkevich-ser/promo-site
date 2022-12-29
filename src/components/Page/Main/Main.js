@@ -39,7 +39,7 @@ function Main(props) {
         </div>
       </div>
       <div className='main__cards'>
-        {props.cards.map((card, i) => {
+        {props.allCards.map((card, i) => {
           if (i === 0) {
             return (
               <Card children={<CardMain dataCard={card}/>} dataCard={card} style='' key={i} />

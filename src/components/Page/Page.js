@@ -13,9 +13,9 @@ function Page(props) {
   return (
     <div className='page'>
     <Header/>
-    <Main cards={props.allCards.slice(0,2)}/>
+    <Main allCards={props.allCards.slice(0,2)}/>
     <Choose/>
-    <Auction cards={props.allCards.slice(4,16)}/>
+    <Auction allCards={props.allCards}/>
     <Footer/>
     </div>
   )

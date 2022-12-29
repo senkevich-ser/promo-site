@@ -18,7 +18,7 @@ function Auction(props) {
       <h3 className='auction__subtitle'>The largest and unique Super rare NFT marketplace <br/>
       For crypto-collectibles</h3>
       <div className='auction__card-container'>
-        {props.cards.map((card,i) => {
+        {props.allCards.slice(4,16).map((card,i) => {
           return (
             <Card children={<CardAuction onClick={onClick} dataCard={card}/>} dataCard={card} style='card_type_auction' key={i}/>
           );
