@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import { Button } from 'antd';
 import RoundCheckBox from '../RoundCheckBox/RoundCheckBox'
 import './CardAuction.css'
@@ -8,28 +8,21 @@ function CardAuction(props) {
   const [isChecked, setIsChecked] = useState(false);
 
 
-
-  /* useEffect(() => {
-    if(JSON.parse(localStorage.getItem('savedCards'))){
-      JSON.parse(localStorage.getItem('savedCards')).some((card)=>{
-        setIsChecked(card.id===props.dataCard.id)
-      })
-}
-  }, []); */
-
 function change(card){
 if(!JSON.parse(localStorage.getItem('savedCards'))){
 localStorage.setItem('savedCards',JSON.stringify([card]))
+setIsChecked(true)
 } else {
+  addCard(card)
+}
+}
+
+function addCard(card){
   let savedArr=JSON.parse(localStorage.getItem('savedCards'));
   savedArr.push(card)
   localStorage.setItem('savedCards',JSON.stringify(savedArr));
   setIsChecked(true)
 }
-}
-
-
-
 
 
   return (
