@@ -13,7 +13,7 @@ function Page(props) {
   return (
     <div className='page'>
     <Header/>
-    <Main allCards={props.allCards.slice(0,2)}/>
+    <Main allCards={props.allCards}/>
     <Choose/>
     <Auction allCards={props.allCards}/>
     <Footer/>

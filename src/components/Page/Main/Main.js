@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import React from 'react';
 import { Button } from 'antd';
 import Card from '../../Card/Card';
@@ -39,7 +40,7 @@ function Main(props) {
         </div>
       </div>
       <div className='main__cards'>
-        {props.allCards.map((card, i) => {
+        {props.allCards.slice(0,2).map((card, i) => {
           if (i === 0) {
             return (
               <Card children={<CardMain dataCard={card}/>} dataCard={card} style='' key={i} />
