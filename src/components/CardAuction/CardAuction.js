@@ -23,11 +23,10 @@ return JSON.parse(localStorage.getItem("savedCards")).some(
       localStorage.setItem("savedCards", JSON.stringify([card]));
       setIsChecked(true);
     }
-    if(checkSavedCards()) {
-      let index = JSON.parse(localStorage.getItem("savedCards")).map(item => {
-        return item.id;
-      }).indexOf(card.id);
-      const newArr = JSON.parse(localStorage.getItem("savedCards")).splice(index, 1);
+    else if(checkSavedCards()) {
+      const newArr = JSON.parse(localStorage.getItem("savedCards")).filter(x => {
+        return x.id !== card.id;
+      })
       localStorage.setItem("savedCards", JSON.stringify(newArr));
       setIsChecked(false);
     } else{
