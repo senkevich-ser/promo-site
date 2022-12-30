@@ -21,6 +21,7 @@
   margin: 0 auto;
   padding-top: 16px;
   text-align: center;
+  max-width: 391px;
 }
 
 .auction__card-container {

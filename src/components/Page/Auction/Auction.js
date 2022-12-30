@@ -11,14 +11,12 @@ function Auction(props) {
   function onClick(dataCard){
     console.log(dataCard)
   }
-
   return (
     <section className='auction'>
-      <h2 className='auction__title'>Live Auction</h2>
-      <h3 className='auction__subtitle'>The largest and unique Super rare NFT marketplace <br/>
-      For crypto-collectibles</h3>
+      <h2 className='auction__title'>{props.title}</h2>
+      <h3 className='auction__subtitle'>{props.subtitle}</h3>
       <div className='auction__card-container'>
-        {props.allCards.slice(4,16).map((card,i) => {
+        {props.allCards.map((card,i) => {
           return (
             <Card children={<CardAuction onClick={onClick} dataCard={card}/>} dataCard={card} style='card_type_auction' key={i}/>
           );
