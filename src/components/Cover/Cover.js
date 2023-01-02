@@ -2,7 +2,7 @@ import React  from "react";
 import "./Cover.css";
 import Star from "./Star/Star";
 
-function Cover({children}) {
+function Cover(props) {
   const starsParams = {
     amount: 50,
     size: {
@@ -47,11 +47,11 @@ function Cover({children}) {
   return (
     <>
       <div className="background">
-        {children}
+        {props.children}
         <div className="ellipse1"></div>
         <div className="ellipse1 ellipse2"></div>
         <div className="ellipse1 ellipse3"></div>
-        <div className="vector"></div>
+        {props.vector?(<div className="vector"></div>):(<div></div>)}
         {starStyles(starsParams).map((star,i) => {
           return (
             <Star style={star} key={i}/>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from 'antd';
 import { headerRoundButtonStyles,
   circleButtonStyles,
@@ -16,7 +17,9 @@ function Nav() {
     </div >
     <div className='nav__searchBlock'>
     <Button type="primary" style={headerSearchButtonStyles} shape="circle" ></Button>
+    <Link to="/saved">
     <Button type="primary" style={headerRoundButtonStyles} shape="round" >Favorites Goods</Button>
+    </Link>
     <Button type="primary" style={circleButtonStyles} shape="circle" ></Button>
     </div>
     </nav>

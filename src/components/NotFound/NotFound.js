@@ -1,25 +1,27 @@
 import React from 'react';
-import Button from '../../components/Button/Button';
+import { useNavigate } from "react-router-dom";
+import { Button } from 'antd';
 import './NotFound.css';
 
-function NotFound({ history }) {
+function NotFound() {
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    history.goBack();
+    navigate(-1);
   }
 
   return (
-    <section className="not-found gradual-change">
-      <h1 className="not-found__title not-found__box gradual-change">
+    <section className="not-found">
+      <h1 className="not-found__title not-found__box">
         404
       </h1>
 
-      <p className="not-found__subtitle not-found__box gradual-change">
+      <p className="not-found__subtitle not-found__box">
         Страница не найдена
       </p>
 
-      <Button userClass="not-found__button" onClick={handleClick}>
-        Назад
+      <Button  onClick={handleClick}>
+        Go Back
       </Button>
 
     </section>
