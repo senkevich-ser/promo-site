@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Route, Switch, useHistory } from 'react-router-dom';
+import { Route, Routes, useHistory } from 'react-router-dom';
 import Spinner from '../Spinner/Spinner';
 import './App.css'
 import Cover from '../Cover/Cover';
@@ -26,14 +26,10 @@ function App() {
   ) : (
 
     <div className='app'>
-      <Switch>
-        <Route exact path="/">
-          <Cover children={<Page allCards={allCards} />} />
-        </Route>
-        <Route path="/saved">
-          <SavedCards />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Cover children={<Page allCards={allCards} />} />} />
+        <Route path="/saved" element={<SavedCards />}/>
+      </Routes>
     </div>
   )
 }
