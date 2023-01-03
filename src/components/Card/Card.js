@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button,} from 'antd';
 import './Card.css'
 
 
@@ -10,6 +11,7 @@ function Card(props) {
       <div className='card__worksQty'>
         <p className='card__qty'>{props.dataCard.stock}</p>
         <span>Digital Artwork</span>
+        {}
       </div>
       <div className='card__priceWindow'>
         <div className='card__ethereumIcon'></div>

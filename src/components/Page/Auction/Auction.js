@@ -18,7 +18,7 @@ function Auction(props) {
       <div className='auction__card-container'>
         {props.allCards.map((card,i) => {
           return (
-            <Card children={<CardAuction onClick={onClick} dataCard={card}/>} dataCard={card} style='card_type_auction' key={i}/>
+            <Card children={<CardAuction isCardAuction={props.isCardAuction} onClick={onClick} dataCard={card}/>} dataCard={card} style='card_type_auction' key={i}/>
           );
         })}
       </div>

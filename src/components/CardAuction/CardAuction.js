@@ -61,11 +61,11 @@ return JSON.parse(localStorage.getItem("savedCards")).some(
       </div>
       <h3 className="card__brandName">{props.dataCard.title}</h3>
       <div className="card__buttons">
-        <RoundCheckBox
+        {props.isCardAuction &&<RoundCheckBox
           isChecked={isChecked}
           dataCard={props.dataCard}
           onChange={change}
-        />
+        />}
         <Button style={{ width: "50%" }} type="primary">
           Добавить в корзину
         </Button>

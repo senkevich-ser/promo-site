@@ -20,7 +20,7 @@ function Page(props) {
     <Header headerTextButtons={headerTextButtons}/>
     <Main allCards={props.allCards}/>
     <Choose/>
-    <Auction allCards={props.allCards.slice(4,16)} title={'Live Auction'} subtitle={'The largest and unique Super rare NFT marketplace    For crypto-collectibles'}/>
+    <Auction isCardAuction={true} allCards={props.allCards.slice(4,16)} title={'Live Auction'} subtitle={'The largest and unique Super rare NFT marketplace    For crypto-collectibles'}/>
     <Footer/>
     </div>
   )

@@ -31,7 +31,7 @@ function SavedCards() {
   return (
     <div className='SavedCards'>
       <Header headerTextButtons={headerTextButtons}/>
-      <Auction allCards={isSavedCards} title={'Favourites goods'} subtitle={'The largest and unique online store    The best prices on the Internet'} />
+      <Auction isCardAuction={false} allCards={isSavedCards} title={'Favourites goods'} subtitle={'The largest and unique online store    The best prices on the Internet'} />
       <Footer />
     </div>
   )
