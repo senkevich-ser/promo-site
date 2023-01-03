@@ -4,12 +4,12 @@ import Nav from '../../Nav/Nav';
 import './Header.css';
 
 
-function Header() {
+function Header(props) {
 
   return (
       <header className='header'>
     <Logo/>
-    <Nav/>
+    <Nav headerTextButtons={props.headerTextButtons}/>
     </header>
   )
 }

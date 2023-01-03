@@ -9,10 +9,15 @@ import './Page.css';
 
 
 function Page(props) {
+  const headerTextButtons={
+    'first':'Discover',
+    'second':'Marketplace',
+    'third':'How it Work',
+  }
 
   return (
     <div className='page'>
-    <Header/>
+    <Header headerTextButtons={headerTextButtons}/>
     <Main allCards={props.allCards}/>
     <Choose/>
     <Auction allCards={props.allCards.slice(4,16)} title={'Live Auction'} subtitle={'The largest and unique Super rare NFT marketplace    For crypto-collectibles'}/>

@@ -8,6 +8,17 @@ import './SavedCards.css';
 function SavedCards() {
   const [isSavedCards, setSavedCards] = useState([]);
 
+  const headerTextButtons={
+    'first':'Home',
+    'firstLink':'/',
+    'second':'Сlear Favorites',
+    'secondFunction':()=>{
+      localStorage.removeItem("savedCards");
+      setSavedCards([])
+    },
+    'third':'',
+  }
+
   useEffect(() => {
     const savedCards = JSON.parse(localStorage.getItem("savedCards"));
     if (savedCards) {
@@ -19,7 +30,7 @@ function SavedCards() {
 
   return (
     <div className='SavedCards'>
-      <Header />
+      <Header headerTextButtons={headerTextButtons}/>
       <Auction allCards={isSavedCards} title={'Favourites goods'} subtitle={'The largest and unique online store    The best prices on the Internet'} />
       <Footer />
     </div>
