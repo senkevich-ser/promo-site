@@ -18,7 +18,7 @@ return JSON.parse(localStorage.getItem("savedCards")).some(
 );
   }
 
-  function change(card) {
+  function saveCard(card) {
     if (!JSON.parse(localStorage.getItem("savedCards"))) {
       localStorage.setItem("savedCards", JSON.stringify([card]));
       setIsChecked(true);
@@ -61,10 +61,10 @@ return JSON.parse(localStorage.getItem("savedCards")).some(
       </div>
       <h3 className="card__brandName">{props.dataCard.title}</h3>
       <div className="card__buttons">
-        {props.isCardAuction &&<RoundCheckBox
+        {props.isRoundCheckBox &&<RoundCheckBox
           isChecked={isChecked}
           dataCard={props.dataCard}
-          onChange={change}
+          onChange={saveCard}
         />}
         <Button style={{ width: "50%" }} type="primary">
           Добавить в корзину

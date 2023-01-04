@@ -28,10 +28,23 @@ function SavedCards() {
     }
   }, []);
 
+  const handleClickDelete=(cardId)=>{
+    const newArr = JSON.parse(localStorage.getItem("savedCards")).filter(x => {
+      return x.id !== cardId;
+    })
+    localStorage.setItem("savedCards", JSON.stringify(newArr));
+    setSavedCards(newArr);
+  }
+
   return (
-    <div className='SavedCards'>
+    <div className='savedCards'>
       <Header headerTextButtons={headerTextButtons}/>
-      <Auction isCardAuction={false} allCards={isSavedCards} title={'Favourites goods'} subtitle={'The largest and unique online store    The best prices on the Internet'} />
+      <Auction onClick={handleClickDelete}
+      isRoundCheckBox={false}
+      isDeleteButton={true}
+      allCards={isSavedCards}
+      title={'Favourites goods'}
+      subtitle={'The largest and unique online store    The best prices on the Internet'} />
       <Footer />
     </div>
   )

@@ -1,4 +1,4 @@
-import noNamedExport from "eslint-plugin-import/lib/rules/no-named-export"
+
 
 const circleButtonStyles = {
   backgroundColor: '#15BFFD',

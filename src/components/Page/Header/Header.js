@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Logo from '../../Logo/Logo';
 import Nav from '../../Nav/Nav';
 import './Header.css';
@@ -8,7 +9,7 @@ function Header(props) {
 
   return (
       <header className='header'>
-    <Logo/>
+    <Link to='/'><Logo/></Link>
     <Nav headerTextButtons={props.headerTextButtons}/>
     </header>
   )

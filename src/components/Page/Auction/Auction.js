@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Card from '../../Card/Card';
 import CardAuction from '../../CardAuction/CardAuction';
 import { headerRoundButtonStyles } from '../Main/styles';
@@ -8,9 +8,11 @@ import './Auction.css'
 
 
 function Auction(props) {
-  function onClick(dataCard){
-    console.log(dataCard)
-  }
+useEffect(()=>{
+props.allCards.map((card)=>(
+  console.log(card.category)
+))
+},[])
   return (
     <section className='auction'>
       <h2 className='auction__title'>{props.title}</h2>
@@ -18,7 +20,11 @@ function Auction(props) {
       <div className='auction__card-container'>
         {props.allCards.map((card,i) => {
           return (
-            <Card children={<CardAuction isCardAuction={props.isCardAuction} onClick={onClick} dataCard={card}/>} dataCard={card} style='card_type_auction' key={i}/>
+            <Card  onClick={props.onClick}
+            isDeleteButton={props.isDeleteButton}
+            children={<CardAuction isRoundCheckBox={props.isRoundCheckBox}
+            dataCard={card}/>}
+            dataCard={card} style='card_type_auction' key={i}/>
           );
         })}
       </div>

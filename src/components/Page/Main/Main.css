@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: row;
-  padding-bottom: 110px;
+  padding-bottom: 60px;
   margin: 0 126px 0 161px;
   position: relative;
 }

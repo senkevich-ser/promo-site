@@ -51,7 +51,7 @@ function Cover(props) {
         <div className="ellipse1"></div>
         <div className="ellipse1 ellipse2"></div>
         <div className="ellipse1 ellipse3"></div>
-        {props.vector?(<div className="vector"></div>):(<div></div>)}
+        {Boolean(props.vector)&&(<div className="vector"></div>)}
         {starStyles(starsParams).map((star,i) => {
           return (
             <Star style={star} key={i}/>

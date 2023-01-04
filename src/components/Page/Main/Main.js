@@ -1,5 +1,6 @@
 /* eslint-disable react/style-prop-object */
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Button } from 'antd';
 import Card from '../../Card/Card';
 import CardMain from '../../CardMain/CardMain';
@@ -24,19 +25,16 @@ function Main(props) {
         <h3 className='main__description'>The largest and unique Super rare marketplace
           <br />For crypto-collectibles</h3>
         <div className='main__connectButtons'>
-          <Button type="primary" style={mainRoundButtonStyles} shape="round" >Connect Wallet</Button>
+          <Link to='/saved'><Button type="primary" style={mainRoundButtonStyles} shape="round" >Favorites Goods</Button></Link>
           <Button type="text" style={createMainButtonStyles} shape="round" />
         </div>
         <div className='main__choiceButtonsTitles'>Last 7 days popular search</div>
         <div className='main__choiceButtons'>
-          <Button type="primary" style={chiceBlueButtonStyles} shape="round" >All</Button>
-          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Music</Button>
-          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >3D Abstract</Button>
-          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Game</Button>
-          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Sprots</Button>
-          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Cartoon</Button>
-          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Virtual World</Button>
-          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Classic</Button>
+          <Button type="primary" onClick={props.filterCards} style={chiceBlueButtonStyles} shape="round" >All</Button>
+          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Laptops</Button>
+          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Fragrances</Button>
+          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Skincare</Button>
+          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Smartphones</Button>
         </div>
       </div>
       <div className='main__cards'>
