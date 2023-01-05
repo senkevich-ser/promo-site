@@ -31,10 +31,12 @@ function Main(props) {
         <div className='main__choiceButtonsTitles'>Last 7 days popular search</div>
         <div className='main__choiceButtons'>
           <Button type="primary" onClick={props.filterCards} style={chiceBlueButtonStyles} shape="round" >All</Button>
-          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Laptops</Button>
-          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Fragrances</Button>
-          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Skincare</Button>
-          <Button type="primary" style={chiceTransparentButtonStyles} shape="round" >Smartphones</Button>
+          <Button type="primary" onClick={props.filterCards} style={chiceTransparentButtonStyles} shape="round" >Laptops</Button>
+          <Button type="primary" onClick={props.filterCards} style={chiceTransparentButtonStyles} shape="round" >Fragrances</Button>
+          <Button type="primary" onClick={props.filterCards} style={chiceTransparentButtonStyles} shape="round" >Skincare</Button>
+          <Button type="primary" onClick={props.filterCards} style={chiceTransparentButtonStyles} shape="round" >Smartphones</Button>
+          <Button type="primary" onClick={props.filterCards} style={chiceTransparentButtonStyles} shape="round" >Groceries</Button>
+          <Button type="primary" onClick={props.filterCards} style={chiceTransparentButtonStyles} shape="round" >Home Decoration</Button>
         </div>
       </div>
       <div className='main__cards'>

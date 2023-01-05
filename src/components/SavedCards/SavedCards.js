@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../Page/Header/Header';
 import Auction from '../Page/Auction/Auction';
 import Footer from '../Page/Footer/Footer';
+import { filterCards } from '../../utils/utils';
 import './SavedCards.css';
 
 
@@ -29,9 +30,7 @@ function SavedCards() {
   }, []);
 
   const handleClickDelete=(cardId)=>{
-    const newArr = JSON.parse(localStorage.getItem("savedCards")).filter(x => {
-      return x.id !== cardId;
-    })
+    const newArr = filterCards(JSON.parse(localStorage.getItem("savedCards")),'id',cardId)
     localStorage.setItem("savedCards", JSON.stringify(newArr));
     setSavedCards(newArr);
   }

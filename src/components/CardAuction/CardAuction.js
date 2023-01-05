@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "antd";
 import RoundCheckBox from "../RoundCheckBox/RoundCheckBox";
+import {filterCards} from '../../utils/utils';
 import "./CardAuction.css";
 
 function CardAuction(props) {
@@ -24,9 +25,7 @@ return JSON.parse(localStorage.getItem("savedCards")).some(
       setIsChecked(true);
     }
     else if(checkSavedCards()) {
-      const newArr = JSON.parse(localStorage.getItem("savedCards")).filter(x => {
-        return x.id !== card.id;
-      })
+      const newArr = filterCards(JSON.parse(localStorage.getItem("savedCards")),'id',card.id)
       localStorage.setItem("savedCards", JSON.stringify(newArr));
       setIsChecked(false);
     } else{
