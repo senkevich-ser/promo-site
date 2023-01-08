@@ -1,6 +1,6 @@
 const visibleCardsNumbers = {
-  1440: { total: 12, add: 4 },
-  1280: { total: 12, add: 3 },
+  1440: { total: 9, add: 3 },
+  1280: { total: 9, add: 3 },
   768: { total: 8, add: 2 },
   480: { total: 5, add: 2 },
 };

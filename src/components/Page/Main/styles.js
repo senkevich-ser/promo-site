@@ -89,11 +89,6 @@ const chiceTransparentButtonStyles = {
   margin: '0 15px 20px 0',
 }
 
-/* const cardTypeAuction = {
-  width: '384px',
-  height: '460px',
-  padding: '0 16px 10px',
-} */
 
 
 export {
@@ -104,5 +99,4 @@ export {
   createMainButtonStyles,
   chiceBlueButtonStyles,
   chiceTransparentButtonStyles,
-  /* cardTypeAuction */
 }
