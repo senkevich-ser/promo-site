@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Route, Routes, useHistory } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Spinner from '../Spinner/Spinner';
 import NotFound from '../NotFound/NotFound';
 import './App.css'
@@ -29,8 +29,8 @@ function App() {
     <div className='app'>
       <Routes>
         <Route exact path="/" element={<Cover vector={true} children={<Page allCards={allCards} />} />} />
-        <Route path="/saved" element={<SavedCards />}/>
-        <Route path="*" element={<Cover vector={false}  children={<NotFound/>} />}/>
+        <Route path="/saved" element={<SavedCards />} />
+        <Route path="*" element={<Cover vector={false} children={<NotFound />} />} />
       </Routes>
     </div>
   )

@@ -23,7 +23,7 @@ const headerRoundButtonStyles = {
   fontSize: '20px',
   lineHeigh: '24px',
   textAlign: 'center',
-  margin:'0 20px',
+  margin: '0 20px',
 
 }
 
@@ -59,9 +59,9 @@ const createMainButtonStyles = {
   backgroundPosition: 'center',
   backgroundSize: '80%',
   backgroundImage: 'url(https://i.postimg.cc/1XdRjMtv/create-NFTs.png)',
-  border:'none',
-  padding:'0',
-  marginLeft:'30px',
+  border: 'none',
+  padding: '0',
+  marginLeft: '30px',
 }
 
 const chiceBlueButtonStyles = {
@@ -71,9 +71,9 @@ const chiceBlueButtonStyles = {
   height: '32px',
   fontWeight: "500",
   fontSize: '16px',
-  lineHeight:'24px',
-  marginBottom:'20px',
-  margin:'0 15px 20px 0',
+  lineHeight: '24px',
+  marginBottom: '20px',
+  margin: '0 15px 20px 0',
 }
 
 const chiceTransparentButtonStyles = {
@@ -85,16 +85,24 @@ const chiceTransparentButtonStyles = {
   weight: "500",
   fontSize: '16px',
   border: ' solid 1px #FFFFFF',
-  paddig:'5px',
-  margin:'0 15px 20px 0',
+  paddig: '5px',
+  margin: '0 15px 20px 0',
 }
 
+/* const cardTypeAuction = {
+  width: '384px',
+  height: '460px',
+  padding: '0 16px 10px',
+} */
 
-export { circleButtonStyles,
+
+export {
+  circleButtonStyles,
   headerRoundButtonStyles,
   mainRoundButtonStyles,
   headerSearchButtonStyles,
   createMainButtonStyles,
   chiceBlueButtonStyles,
-  chiceTransparentButtonStyles
- }
+  chiceTransparentButtonStyles,
+  /* cardTypeAuction */
+}

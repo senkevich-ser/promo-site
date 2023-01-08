@@ -40,14 +40,14 @@ function Main(props) {
         </div>
       </div>
       <div className='main__cards'>
-        {props.allCards.slice(0,2).map((card, i) => {
+        {props.allCards.slice(0, 2).map((card, i) => {
           if (i === 0) {
             return (
-              <Card children={<CardMain dataCard={card}/>} dataCard={card} style='' key={i} />
+              <Card children={<CardMain dataCard={card} />} dataCard={card} styles='' key={i} />
             )
           } else {
             return (
-              <Card children={<CardMain dataCard={card} />} dataCard={card} style='card_type_rotate' key={i} />
+              <Card children={<CardMain dataCard={card} />} dataCard={card} styles='card_type_rotate' key={i} />
             )
           }
         })}

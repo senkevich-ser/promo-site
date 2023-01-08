@@ -1,4 +1,4 @@
-.main__cards{
+.main__cards {
   position: relative;
   margin-left: 100px;
 }
@@ -7,7 +7,7 @@
   display: flex;
   position: relative;
   backdrop-filter: blur(8px);
-  background-color: #080B2A80;
+  background-color: #080b2a80;
   color: #ffffff;
   width: 300px;
   height: 410px;
@@ -18,54 +18,54 @@
   z-index: 1;
   /* opacity: 70%; */
 }
-.card__effect{
+.card__effect {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 16px;
   top: 0;
   left: 0;
-  z-index:-1;
+  z-index: -1;
 }
 
 .card__qty {
   margin: 0 3px 0 0;
-  vertical-align:middle;
+  vertical-align: middle;
 }
-.card__worksQty{
+.card__worksQty {
   display: flex;
   flex-direction: row;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
-.card__worksQtyWrapper{
+.card__worksQtyWrapper {
   display: flex;
   flex-direction: row;
-  font-family: 'Poppins-Medium';
+  font-family: "Poppins-Medium";
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
   margin: 16px 0 0 16px;
 }
-.card__priceWindow{
+.card__priceWindow {
   display: flex;
   flex-direction: row;
-  font-family: 'Poppins-SemiBold';
+  font-family: "Poppins-SemiBold";
   font-size: 16px;
   font-weight: 600;
   margin: 0 0 0 16px;
-  color: #15BFFD;
+  color: #15bffd;
 }
-.card__ethereumIcon{
+.card__ethereumIcon {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
   width: 16px;
   height: 16px;
-  background-image:url('../../images/ethereumIcon.svg') ;
+  background-image: url("../../images/ethereumIcon.svg");
 }
 
-.card__price{
+.card__price {
   opacity: 100%;
   margin: 0 7px 0 0;
 }
@@ -78,33 +78,22 @@ justify-content: space-between;
   background-size: cover;
 }
 
-.card__image::before{
-  /* content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #764abc;
-  z-index: 0; */
-}
-
-.card__NFTname{
+.card__NFTname {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins-Medium';
+  font-family: "Poppins-Medium";
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   margin-left: 16px;
 }
 
-.card_type_rotate{
-position: absolute;
-top:115px;
-left:315px;
-transform:rotate(24deg);
-margin: 0;
+.card_type_rotate {
+  position: absolute;
+  top: 115px;
+  left: 315px;
+  transform: rotate(24deg);
+  margin: 0;
 }
 
 .card_type_auction {
@@ -112,8 +101,3 @@ margin: 0;
   height: 460px;
   padding: 0 16px 10px;
 }
-
-/* .card_type_auction{
-  width: 384px;
-  height: 460px;
-  } */

@@ -5,7 +5,7 @@ import Main from "./Main/Main";
 import Choose from "./Choose/Chose";
 import Auction from "./Auction/Auction";
 import Footer from "./Footer/Footer";
-import { filterCategories } from "../../utils/utils";
+import { filterCategories } from "../../utils/Filters";
 import "./Page.css";
 
 function Page(props) {

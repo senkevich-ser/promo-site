@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Card from '../../Card/Card';
 import CardAuction from '../../CardAuction/CardAuction';
 import { headerRoundButtonStyles } from '../Main/styles';
@@ -19,7 +19,9 @@ function Auction(props) {
               isDeleteButton={props.isDeleteButton}
               children={<CardAuction isRoundCheckBox={props.isRoundCheckBox}
                 dataCard={card} />}
-              dataCard={card} style={'card_type_auction'} key={card.id} />
+              dataCard={card}
+              styles='card_type_auction'
+              key={card.id} />
           );
         })}
       </div>
