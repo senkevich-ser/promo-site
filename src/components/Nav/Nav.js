@@ -1,18 +1,18 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
 import {
   headerRoundButtonStyles,
   circleButtonStyles,
   headerSearchButtonStyles,
-} from "../Page/Main/styles";
+} from "../styles";
 import "./Nav.css";
 
 function Nav(props) {
-  const [buttonsData,setButtonsData]=useState({});
-useEffect(()=>{
-  setButtonsData(props.headerTextButtons);
-},[])
+  const [buttonsData, setButtonsData] = useState({});
+  useEffect(() => {
+    setButtonsData(props.headerTextButtons);
+  }, [])
   return (
     <nav className="nav">
       <div className="nav__mainBlock">

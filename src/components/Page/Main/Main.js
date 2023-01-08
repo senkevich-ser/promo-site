@@ -9,7 +9,7 @@ import {
   createMainButtonStyles,
   chiceBlueButtonStyles,
   chiceTransparentButtonStyles
-} from './styles';
+} from '../../styles';
 import './Main.css';
 
 

@@ -89,6 +89,16 @@ const chiceTransparentButtonStyles = {
   margin: '0 15px 20px 0',
 }
 
+const cardBrandName = {
+  color: '#ffffff',
+  textDecoration: 'none',
+  margin: '0',
+  padding: '0',
+  fontFamily: 'Poppins-Medium',
+  fontSize: '16px',
+  lineHeight: '24px',
+  fontWeight: '500',
+}
 
 
 export {
@@ -99,4 +109,5 @@ export {
   createMainButtonStyles,
   chiceBlueButtonStyles,
   chiceTransparentButtonStyles,
+  cardBrandName
 }

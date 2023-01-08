@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../../Card/Card';
 import CardAuction from '../../CardAuction/CardAuction';
-import { headerRoundButtonStyles } from '../Main/styles';
+import { headerRoundButtonStyles } from '../../styles';
 import { useWindowDimensions } from '../../../hooks/useDimensions';
 import { getVisualProps } from '../../../utils/VisualProps';
 import { Button, Space } from 'antd';
