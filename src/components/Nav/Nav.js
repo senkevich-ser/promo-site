@@ -37,11 +37,13 @@ function Nav(props) {
             Favorites Goods
           </Button>
         </Link>
+        <Link to="/item">
         <Button
           type="primary"
           style={circleButtonStyles}
           shape="circle"
         ></Button>
+        </Link>
       </div>
     </nav>
   );

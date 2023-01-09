@@ -6,6 +6,7 @@ import './App.css'
 import Cover from '../Cover/Cover';
 import Page from '../Page/Page';
 import SavedCards from '../SavedCards/SavedCards';
+import ItemInfo from '../ItemInfo/ItemInfo';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Cover vector={true} children={<Page allCards={allCards} />} />} />
         <Route path="/saved" element={<SavedCards />} />
+        <Route path="/item" element={<ItemInfo />} />
         <Route path="*" element={<Cover vector={false} children={<NotFound />} />} />
       </Routes>
     </div>
