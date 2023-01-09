@@ -1,4 +1,4 @@
-const dataCard =
+const card =
   {
     brand: "Apple",
     category: "smartphones",
@@ -19,4 +19,4 @@ const dataCard =
     title: "iPhone 9",
   }
 
-export { dataCard };
+export default card ;
