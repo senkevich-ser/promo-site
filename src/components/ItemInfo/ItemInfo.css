@@ -5,12 +5,31 @@
 .itemInfo__wapper {
   color:#ffffff;
   padding: 80px 126px;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .itemInfo__rightInfo{
+  padding: 40px 0 0 200px;
   flex-direction: column;
+  width: 50%;
+}
+
+.itemInfo__wapper_favoriteCheck{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.itemInfo__title{
+  margin:40px 0;
+  padding: 0;
+  width: auto;
+}
+.carousel-root{
+  width: 50%;
 }
