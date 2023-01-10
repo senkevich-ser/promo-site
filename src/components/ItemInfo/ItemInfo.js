@@ -1,17 +1,13 @@
 import React, { useEffect } from 'react';
 import Header from '../Page/Header/Header';
 import Footer from '../Page/Footer/Footer';
+import RoundCheckBox from '../RoundCheckBox/RoundCheckBox'
 import './ItemInfo.css';
 import DemoCarousel from '../Carousel/Carousel';
 
 
-function ItemInfo() {
+function ItemInfo(props) {
 
-  /* const [imagesArr,setImagesArr]=useState([]);
-  useEffect(()=>{
-    const images = Object.keys(obj).map((key) => [Number(key), obj[key]]);
-    setImagesArr();
-  }) */
   const headerTextButtons = {
     first: "Discover",
     second: "Marketplace",
@@ -21,7 +17,16 @@ function ItemInfo() {
   return (
     <div className='itemInfo'>
       <Header headerTextButtons={headerTextButtons}/>
+      <div className='itemInfo__wapper'>
       <DemoCarousel/>
+      <div className='itemInfo__wapper itemInfo__rightInfo'>
+        <div className='itemInfo__wapper'>
+        <span className='itemInfo__brand'>Apple</span>
+        <RoundCheckBox/>
+        </div>
+        <h1 itemInfo__title>Telephone Apple X</h1>
+      </div>
+      </div>
       <Footer />
     </div>
   )

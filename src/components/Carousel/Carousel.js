@@ -13,10 +13,10 @@ function DemoCarousel (){
     setImagesArr(images);
   },[])
     return (
-      <Carousel width={'50%'}>
+      <Carousel>
         {imagesArr.map((img, i) => (
           <div key={i}>
-            <img src={img} />
+            <img src={img} alt=''/>
           </div>
         ))}
       </Carousel>
