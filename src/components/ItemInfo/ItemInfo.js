@@ -1,13 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { Button } from "antd";
 import Header from '../Page/Header/Header';
 import Footer from '../Page/Footer/Footer';
-import RoundCheckBox from '../RoundCheckBox/RoundCheckBox';
+import LikeCheckBox from '../LikeCheckBox/LikeCheckBox';
 import './ItemInfo.css';
 import DemoCarousel from '../Carousel/Carousel';
 
 
 function ItemInfo(props) {
+
+  const [dataCard, setDataCard]=useState([])
+  let { id } = useParams();
+
+  useEffect(()=>{
+    if(props.dataCards.length){
+      const card = props.dataCards.find(card => card.id === Number(id));
+      setDataCard(card);
+    }
+  },[props.dataCards])
+
 
   const headerTextButtons = {
     first: "Discover",
@@ -19,30 +31,27 @@ function ItemInfo(props) {
     <div className='itemInfo'>
       <Header headerTextButtons={headerTextButtons}/>
       <div className='itemInfo__wapper'>
-      <DemoCarousel />
+      <DemoCarousel dataCard={dataCard}/>
       <div className='itemInfo__rightInfo'>
         <div className='itemInfo__wapper_favoriteCheck'>
-        <span className='itemInfo__brand'>Apple</span>
+        <span className='itemInfo__brand'>{dataCard.brand}</span>
         </div>
-        <h1 className='itemInfo__title'>Telephone Apple X</h1>
-        <div className='itemInfo__price'>&#36;&#32;{567}</div>
-        <span className='itemInfo__discount'>{70}&#32;&#37;</span>
-        <span className='itemInfo__rating'>{9.5}</span>
-        <span className='itemInfo__stock'>{28}</span>
-        <p className='itemInfo__description'>Labore aliquip excepteur est qui officia ut nostrud pariatur
-        voluptate aute deserunt. Ea commodo Lorem dolor nulla qui.
-        Est laborum eiusmod elit non velit reprehenderit dolor officia ex duis.</p>
+        <h1 className='itemInfo__title'>{dataCard.title}</h1>
+        <div className='itemInfo__price'>&#36;&#32;{dataCard.price}</div>
+        <span className='itemInfo__discount'>{dataCard.discountPercentage}&#32;&#37;</span>
+        <span className='itemInfo__rating'>{dataCard.rating
+}</span>
+        <span className='itemInfo__stock'>{dataCard.stock}</span>
+        <p className='itemInfo__description'>{dataCard.description}</p>
       </div>
-      {/* <div className="card__buttons">
-        {props.isRoundCheckBox && <RoundCheckBox
-          isChecked={isChecked}
-          dataCard={props.dataCard}
-          onChange={saveCard}
+      <div className="card__buttons">
+        {props.isRoundCheckBox && <LikeCheckBox
+          dataCard={dataCard}
         />}
         <Button style={{ width: "50%" }} type="primary">
           Добавить в корзину
         </Button>
-      </div> */}
+      </div>
       </div>
       <Footer />
     </div>

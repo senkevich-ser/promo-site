@@ -1,46 +1,12 @@
-import React, { useState, useEffect } from "react";
+
 import { Link } from "react-router-dom";
 import { Button } from "antd";
-import RoundCheckBox from "../RoundCheckBox/RoundCheckBox";
-import { filterCards } from '../../utils/Filters';
+import LikeCheckBox from "../LikeCheckBox/LikeCheckBox";
 import { cardBrandName } from '../styles';
 import "./CardAuction.css";
 
 function CardAuction(props) {
-  const [isChecked, setIsChecked] = useState(false);
 
-  useEffect(() => {
-    if (JSON.parse(localStorage.getItem("savedCards"))) {
-      setIsChecked(checkSavedCards);
-    }
-  }, []);
-
-  function checkSavedCards() {
-    return JSON.parse(localStorage.getItem("savedCards")).some(
-      (card) => card.id === props.dataCard.id
-    );
-  }
-
-  function saveCard(card) {
-    if (!JSON.parse(localStorage.getItem("savedCards"))) {
-      localStorage.setItem("savedCards", JSON.stringify([card]));
-      setIsChecked(true);
-    }
-    else if (checkSavedCards()) {
-      const newArr = filterCards(JSON.parse(localStorage.getItem("savedCards")), 'id', card.id)
-      localStorage.setItem("savedCards", JSON.stringify(newArr));
-      setIsChecked(false);
-    } else {
-      addCard(card);
-    }
-  }
-
-  function addCard(card) {
-    let savedArr = JSON.parse(localStorage.getItem("savedCards"));
-    savedArr.push(card);
-    localStorage.setItem("savedCards", JSON.stringify(savedArr));
-    setIsChecked(true);
-  }
 
   return (
     <>
@@ -64,10 +30,8 @@ function CardAuction(props) {
         <h3 className="card__brandName">{props.dataCard.title}</h3>
       </Link>
       <div className="card__buttons">
-        {props.isRoundCheckBox && <RoundCheckBox
-          isChecked={isChecked}
+        {props.isRoundCheckBox && <LikeCheckBox
           dataCard={props.dataCard}
-          onChange={saveCard}
         />}
         <Button style={{ width: "50%" }} type="primary">
           Добавить в корзину

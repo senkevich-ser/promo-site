@@ -4,12 +4,12 @@ import { Carousel } from 'react-responsive-carousel';
 import './Carousel.css'
 import  card  from '../../dataCard';
 
-function DemoCarousel (){
+function DemoCarousel (props){
 
 
   const [imagesArr,setImagesArr]=useState([]);
   useEffect(()=>{
-    const images = Object.keys(card.images).map((key) => card.images[key]);
+    const images = Object.keys(props.dataCard.images).map((key) => props.dataCard.images[key]);
     setImagesArr(images);
   },[])
     return (
