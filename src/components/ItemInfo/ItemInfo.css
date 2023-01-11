@@ -12,7 +12,8 @@
 }
 
 .itemInfo__rightInfo{
-  padding: 40px 0 0 200px;
+  font-family: 'ClashDisplay-Semibold';
+  padding: 20px 0 0 200px;
   flex-direction: column;
   width: 50%;
 }
@@ -29,6 +30,15 @@
   margin:40px 0;
   padding: 0;
   width: auto;
+}
+.itemInfo__description{
+  font-family: 'ClashDisplay-Regular';
+  margin-bottom: 60px;
+}
+
+.display_block{
+  display: block;
+  margin-top: 20px;
 }
 .carousel-root{
   width: 50%;

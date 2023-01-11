@@ -10,7 +10,7 @@ import DemoCarousel from '../Carousel/Carousel';
 
 function ItemInfo(props) {
 
-  const [dataCard, setDataCard]=useState([])
+  const [dataCard, setDataCard]=useState({})
   let { id } = useParams();
 
   useEffect(()=>{
@@ -31,26 +31,26 @@ function ItemInfo(props) {
     <div className='itemInfo'>
       <Header headerTextButtons={headerTextButtons}/>
       <div className='itemInfo__wapper'>
-      <DemoCarousel dataCard={dataCard}/>
+      <DemoCarousel data={dataCard}/>
       <div className='itemInfo__rightInfo'>
         <div className='itemInfo__wapper_favoriteCheck'>
         <span className='itemInfo__brand'>{dataCard.brand}</span>
         </div>
         <h1 className='itemInfo__title'>{dataCard.title}</h1>
-        <div className='itemInfo__price'>&#36;&#32;{dataCard.price}</div>
-        <span className='itemInfo__discount'>{dataCard.discountPercentage}&#32;&#37;</span>
-        <span className='itemInfo__rating'>{dataCard.rating
+        <div className='itemInfo__price display_block'>&#36;&#32;{dataCard.price}</div>
+        <span className='itemInfo__discount display_block'>{dataCard.discountPercentage}&#32;&#37;</span>
+        <span className='itemInfo__rating display_block'>{dataCard.rating
 }</span>
-        <span className='itemInfo__stock'>{dataCard.stock}</span>
-        <p className='itemInfo__description'>{dataCard.description}</p>
-      </div>
-      <div className="card__buttons">
+        <span className='itemInfo__stock display_block'>{dataCard.stock}</span>
+        <p className='itemInfo__description display_block'>{dataCard.description}</p>
+        {<div className="card__buttons">
         {props.isRoundCheckBox && <LikeCheckBox
           dataCard={dataCard}
         />}
         <Button style={{ width: "50%" }} type="primary">
           Добавить в корзину
         </Button>
+      </div>}
       </div>
       </div>
       <Footer />

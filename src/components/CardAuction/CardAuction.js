@@ -10,7 +10,7 @@ function CardAuction(props) {
 
   return (
     <>
-      <Link to={`/${props.dataCard.id}`} style={cardBrandName}>
+      <Link to={`/goods/${props.dataCard.id}`} style={cardBrandName}>
         <div className="cardAuction__images">
           <div
             className="cardAuction__image cardAuction__singleImage"
