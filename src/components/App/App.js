@@ -32,6 +32,7 @@ function App() {
         <Route exact path="/" element={<Cover vector={true} children={<Page allCards={allCards} />} />} />
         <Route path="/saved" element={<SavedCards />} />
         <Route path="/goods/:id" element={<ItemInfo dataCards={allCards} isRoundCheckBox={true}/>} />
+        <Route path="/item" element={<Cover vector={true} />} />
         <Route path="*" element={<Cover vector={false} children={<NotFound />} />} />
       </Routes>
     </div>

@@ -20,33 +20,35 @@ function Nav(props) {
           <Button type="text">{buttonsData.first}</Button>
         </Link>
         <Link to={`/${buttonsData.secondLink}`}>
-        <Button onClick={buttonsData.secondFunction} type="text">
-          {props.headerTextButtons.second}
-        </Button>
+          <Button onClick={buttonsData.secondFunction} type="text">
+            {props.headerTextButtons.second}
+          </Button>
         </Link>
         {Boolean(buttonsData.third) && (
           <Link to={`/${buttonsData.thirdLink}`}>
-          <Button type="text">{buttonsData.third}</Button>
+            <Button type="text">{buttonsData.third}</Button>
           </Link>
         )}
       </div>
       <div className="nav__searchBlock">
+      <Link to="/*">
         <Button
           type="primary"
           style={headerSearchButtonStyles}
           shape="circle"
         ></Button>
+        </Link>
         <Link to="/saved">
           <Button type="primary" style={headerRoundButtonStyles} shape="round">
             Favorites Goods
           </Button>
         </Link>
         <Link to="/item">
-        <Button
-          type="primary"
-          style={circleButtonStyles}
-          shape="circle"
-        ></Button>
+          <Button
+            type="primary"
+            style={circleButtonStyles}
+            shape="circle"
+          ></Button>
         </Link>
       </div>
     </nav>

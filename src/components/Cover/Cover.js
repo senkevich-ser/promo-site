@@ -1,8 +1,12 @@
-import React  from "react";
+import React, { useEffect } from "react";
+import { useScreenDimensions, useWindowDimensions } from "../../hooks/useDimensions";
 import "./Cover.css";
 import Star from "./Star/Star";
 
 function Cover(props) {
+
+  const { width } = useWindowDimensions();
+  const { height } = useScreenDimensions();
   const starsParams = {
     amount: 50,
     size: {
@@ -11,6 +15,11 @@ function Cover(props) {
       giant: 9,
     }
   };
+
+  useEffect(() => {
+    console.log(width);
+    console.log(height)
+  })
 
   /* const ellipseParams = {
     amount: 30,
@@ -48,13 +57,13 @@ function Cover(props) {
     <>
       <div className="background">
         {props.children}
-        <div className="ellipse1"></div>
+        {/*  <div className="ellipse1"></div>
         <div className="ellipse1 ellipse2"></div>
         <div className="ellipse1 ellipse3"></div>
-        {Boolean(props.vector)&&(<div className="vector"></div>)}
-        {starStyles(starsParams).map((star,i) => {
+        {Boolean(props.vector)&&(<div className="vector"></div>)} */}
+        {starStyles(starsParams).map((star, i) => {
           return (
-            <Star style={star} key={i}/>
+            <Star style={star} key={i} />
           );
         })}
       </div>

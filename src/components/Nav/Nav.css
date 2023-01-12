@@ -6,31 +6,60 @@
 }
 
 
-
-.css-dev-only-do-not-override-26rdvq:not(.css-dev-only-do-not-override-26rdvq):hover {
-  color: #ffffff;
-}
-.ant-btn-text:not(:disabled):hover {
+.ant-btn-text.ant-btn:not(:disabled):hover {
+  padding-right: 10px;
+  padding-left: 10px;
   font-size: 18px;
   font-weight: 600;
   color: #ffffff;
 }
+
+.ant-btn-primary:hover{
+ transition-duration:0.3s;
+ transform: scale(1.1,1.1);
+}
+
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 70%;
 }
 .nav__mainBlock{
   display: flex;
   align-items: center;
-  margin-right: 202px;
+  width: 40%;
+  /* margin-right: 202px; */
 }
 .nav__searchBlock {
   display: flex;
   align-items: center;
+  width: 40%;
+  justify-content: space-between;
 }
 
 .nav__searchButton:hover{
   transform: scale(1.1,1.1);
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 1380px) {
+  .nav__mainBlock{
+    width: 50%;
+  }
+  .nav__searchBlock {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .nav__mainBlock{
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .nav__searchBlock {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }

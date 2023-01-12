@@ -10,15 +10,32 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  min-width: 100px;
+}
+
+.footer__ColumnWrapper:nth-of-type(3) {
+  min-width: 150px;
 }
 .footer__text {
+  transition-duration:0.2s;
   font-family: "ClashDisplay-Regular";
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   max-width: 320px;
 }
+
+.footer__text:hover {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  max-width: 320px;
+}
 .footer__copyrightText {
+  font-family: "ClashDisplay-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   max-width: 320px;
   margin: 24px 0;
 }
@@ -35,6 +52,7 @@
   margin: 0 0 20px 0;
   padding: 0;
 }
+
 .footer__link {
   text-decoration: none;
 }
@@ -45,6 +63,7 @@
   margin: 0 0 113px 0;
 }
 .socialLink {
+  transition-duration:0.3s;
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -53,6 +72,9 @@
   background-size: 100%;
   margin-right: 20px;
 }
+.socialLink:hover{
+  transform: scale(1.15,1.15);
+ }
 
 .facebook {
   background-image: url("../../../images/faceboock.svg");
@@ -78,4 +100,16 @@
   font-size: 14px;
   line-height: 17px;
   letter-spacing: -0.02em;
+}
+
+@media screen and (max-width: 1380px) {
+  .footer{
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer{
+    max-width: 800px;
+  }
 }

@@ -23,7 +23,7 @@ const headerRoundButtonStyles = {
   fontSize: '20px',
   lineHeigh: '24px',
   textAlign: 'center',
-  margin: '0 20px',
+  /* margin: '0 20px', */
 
 }
 
