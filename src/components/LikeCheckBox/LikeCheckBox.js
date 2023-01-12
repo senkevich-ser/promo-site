@@ -14,7 +14,7 @@ function LikeCheckBox(props) {
     if (JSON.parse(localStorage.getItem("savedCards"))) {
       setIsChecked(checkSavedCards);
     }
-  }, []);
+  }, [props.dataCard]);
 
   function checkSavedCards() {
     return JSON.parse(localStorage.getItem("savedCards")).some(

@@ -44,19 +44,19 @@ function ItemInfo(props) {
           <span className='itemInfo__discount display_block'>Current &nbsp;&nbsp; discount &nbsp;&nbsp;{dataCard.discountPercentage}&#32;&#37;</span>
           <span className='itemInfo__rating display_block'>Current &nbsp;&nbsp; rating &nbsp;&nbsp;{dataCard.rating}</span>
           <Rating  initialRating={dataCard.rating} readonly
-            emptySymbol={<img src={starEmpty} className="icon" />}
-            fullSymbol={<img src={starFull} className="icon" />}
+            emptySymbol={<img src={starEmpty} className="icon" alt=''/>}
+            fullSymbol={<img src={starFull} className="icon" alt='' />}
           />
           <span className='itemInfo__stock display_block'>Current &nbsp;&nbsp; stock &nbsp;&nbsp;{dataCard.stock}&nbsp;&nbsp;pcs.</span>
           <p className='itemInfo__description display_block'>{dataCard.description}</p>
-          {<div className="card__buttons">
+          <div className="card__buttons">
             {props.isRoundCheckBox && <LikeCheckBox
               dataCard={dataCard}
             />}
             <Button style={{ width: "50%" }} type="primary">
               Добавить в корзину
             </Button>
-          </div>}
+          </div>
         </div>
       </div>
       <Footer />
