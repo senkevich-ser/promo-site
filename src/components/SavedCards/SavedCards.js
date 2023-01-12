@@ -13,11 +13,13 @@ function SavedCards() {
     'first': 'Home',
     'firstLink': '/',
     'second': 'Сlear Favorites',
+    'secondLink': 'saved',
     'secondFunction': () => {
       localStorage.removeItem("savedCards");
       setSavedCards([])
     },
     'third': '',
+    'thirdLink': '*',
   }
 
   useEffect(() => {

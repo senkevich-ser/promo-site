@@ -1,11 +1,20 @@
 .ant-btn-text {
   color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
-.ant-btn-circle {
- /*  background-image: url(../../images/roundButtonIcon.svg); */
-}
 
+
+.css-dev-only-do-not-override-26rdvq:not(.css-dev-only-do-not-override-26rdvq):hover {
+  color: #ffffff;
+}
+.ant-btn-text:not(:disabled):hover {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
 .nav {
   display: flex;
   flex-direction: row;

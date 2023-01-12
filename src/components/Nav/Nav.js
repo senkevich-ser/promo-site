@@ -19,11 +19,15 @@ function Nav(props) {
         <Link to={`${buttonsData.firstLink}`}>
           <Button type="text">{buttonsData.first}</Button>
         </Link>
+        <Link to={`/${buttonsData.secondLink}`}>
         <Button onClick={buttonsData.secondFunction} type="text">
           {props.headerTextButtons.second}
         </Button>
+        </Link>
         {Boolean(buttonsData.third) && (
+          <Link to={`/${buttonsData.thirdLink}`}>
           <Button type="text">{buttonsData.third}</Button>
+          </Link>
         )}
       </div>
       <div className="nav__searchBlock">
