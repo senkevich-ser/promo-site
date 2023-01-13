@@ -108,8 +108,27 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1190px) {
   .footer{
     max-width: 800px;
   }
+}
+
+@media screen and (max-width: 980px) {
+  .footer{
+    max-width: 750px;
+  }
+  .footer__copyrightText{
+    max-width: 220px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .footer{
+    max-width: 650px;
+  }
+  .footer__subtitles {
+    margin: 0 0 10px 0;
+  }
+
 }

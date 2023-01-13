@@ -8,7 +8,7 @@ function Choose() {
       <div className='choose__effect'></div>
         <div className='choose__image'></div>
         <div className='choose__info'>
-          <h2 className='choose__title'>Why choose us?</h2>
+          <h2 className='choose__title'>Why choose us ?</h2>
           <p className='choose__paragraph'>Cillum ipsum officia laborum
            culpa cillum. Anim tempor exercitation aliqua
            aute culpa est exercitation sint. Laborum ut

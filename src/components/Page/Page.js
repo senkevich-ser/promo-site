@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
-import Choose from "./Choose/Chose";
+import Choose from "./Choose/Choose";
 import Auction from "./Auction/Auction";
 import Footer from "./Footer/Footer";
 import { filterCategories } from "../../utils/Filters";

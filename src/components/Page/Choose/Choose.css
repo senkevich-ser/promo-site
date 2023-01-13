@@ -43,6 +43,7 @@
   font-weight: 600;
   font-size: 45px;
   line-height: 60px;
+  padding-right: 40px;
 }
 
 .choose__paragraph{
@@ -50,4 +51,26 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 980px) {
+  .choose__info{
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .choose__paragraph{
+    padding-right: 0;
+  }
+
+  .choose__image {
+    position: absolute;
+    top:10%;
+    left: 15%;
+    z-index: -1;
+    width: 327px;
+    height: 327px;
+    margin: 0;
+  }
 }
