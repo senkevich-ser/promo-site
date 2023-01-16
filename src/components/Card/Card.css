@@ -101,3 +101,10 @@
   height: 460px;
   padding: 0 16px 10px;
 }
+
+@media screen and (max-width: 500px) {
+  .card{
+    transform: scale(0.9,0.9);
+   }
+}
+

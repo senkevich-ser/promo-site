@@ -31,3 +31,27 @@
     max-width: 650px;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .header{
+    max-width: 580px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header{
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header{
+    max-width: 380px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header{
+    max-width: 280px;
+  }
+}

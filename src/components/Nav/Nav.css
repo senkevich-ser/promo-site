@@ -57,15 +57,43 @@
 @media screen and (max-width: 1100px) {
   .nav{
     width: 100%;
+    box-sizing: border-box;
   }
 }
-/* @media screen and (max-width: 1100px) {
-  .nav__mainBlock{
-    flex-direction: column;
-    margin-right: 0;
+
+@media screen and (max-width: 880px) {
+  .ant-btn-primary{
+    transform: scale(0.9,0.9);
+   }
+   .ant-btn-text{
+    font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 750px) {
+  .ant-btn-text{
+    font-size: 12px;
+    padding: 4px 10px;
+   }
+}
+
+@media screen and (max-width: 650px) {
+  .ant-btn-text{
+    padding: 0px 5px;
+   }
+   .ant-btn-primary{
+    transform: scale(0.8,0.8);
+   }
+
+   .nav__mainBlock{
+    width: 45%;
   }
   .nav__searchBlock {
-    flex-direction: column-reverse;
-    align-items: center;
+    width: 55%;
   }
-} */
+
+  .nav{
+    flex-direction: column;
+  }
+}
+

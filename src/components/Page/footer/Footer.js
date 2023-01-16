@@ -18,8 +18,9 @@ function Footer() {
         </ul>
         <span className="footer__copyright">Copyrigh &#169; &thinsp; NFT core 2022 All right reserved</span>
       </div>
+      <div className="footer__LinksWrapper">
       <div className="footer__ColumnWrapper">
-        <h3 className="footer__tiles">SiteMap</h3>
+        <h3 className="footer__titles">SiteMap</h3>
         <ul className="footer__subtitles">
           <li className="footer__subtitles"><Link className='footer__navLink footer__text' to='/'>Home</Link></li>
           <li className="footer__subtitles"><Link className='footer__navLink footer__text' to='/*'>About</Link></li>
@@ -30,7 +31,7 @@ function Footer() {
         </ul>
       </div>
       <div className="footer__ColumnWrapper">
-        <h3 className="footer__tiles" >Company</h3>
+        <h3 className="footer__titles" >Company</h3>
         <ul className="footer__subtitles">
           <li className="footer__subtitles"><Link className='footer__navLink footer__text' to='/*'>Help&Support</Link></li>
           <li className="footer__subtitles"><Link className='footer__navLink footer__text' to='/*'>Terms&Condition</Link></li>
@@ -38,12 +39,13 @@ function Footer() {
         </ul>
       </div>
       <div className="footer__ColumnWrapper">
-        <h3 className="footer__tiles">Resource</h3>
+        <h3 className="footer__titles">Resource</h3>
         <ul className="footer__subtitles">
           <li className="footer__subtitles"><Link className='footer__navLink footer__text' to='/*'>Partner</Link></li>
           <li className="footer__subtitles"><Link className='footer__navLink footer__text' to='/*'>Blog</Link></li>
           <li className="footer__subtitles"><Link className='footer__navLink footer__text' to='/*'>Newsletter</Link></li>
         </ul>
+      </div>
       </div>
     </footer>
   );

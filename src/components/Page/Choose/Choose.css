@@ -38,7 +38,8 @@
   margin: 121px 0 143px 0;
   z-index: 2;
 }
-.choose__title{
+
+.choose__title {
   font-family: 'ClashDisplay-Semibold';
   font-weight: 600;
   font-size: 45px;
@@ -46,7 +47,7 @@
   padding-right: 40px;
 }
 
-.choose__paragraph{
+.choose__paragraph {
   font-family: 'ClashDisplay-Regular';
   font-weight: 400;
   font-size: 20px;
@@ -55,18 +56,40 @@
 }
 
 @media screen and (max-width: 980px) {
-  .choose__info{
+  .choose__info {
     max-width: 620px;
     margin: 0 auto;
   }
 
-  .choose__paragraph{
+  .choose__paragraph {
     padding-right: 0;
   }
 
   .choose__image {
     position: absolute;
-    top:10%;
+    top: 10%;
+    left: 15%;
+    z-index: -1;
+    width: 327px;
+    height: 327px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .choose__info {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .choose__paragraph {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .choose__image {
+    position: absolute;
+    top: 10%;
     left: 15%;
     z-index: -1;
     width: 327px;
