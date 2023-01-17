@@ -108,3 +108,9 @@
    }
 }
 
+@media screen and (max-width: 430px) {
+  .card{
+    transform: scale(0.8,0.8);
+   }
+}
+

@@ -61,7 +61,6 @@ const createMainButtonStyles = {
   backgroundImage: 'url(https://i.postimg.cc/1XdRjMtv/create-NFTs.png)',
   border: 'none',
   padding: '0',
-  marginLeft: '30px',
 }
 
 const chiceBlueButtonStyles = {

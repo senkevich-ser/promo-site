@@ -1,20 +1,10 @@
-.body{
-    min-width: 320px;
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: #080B2A;
-  }
-
-  .root{
-    background-color: inherit;
-    margin: 0 auto;
-  }
 
 .app {
     width: 100%;
     display: flex;
     position: relative;
-    margin:auto;
+    margin:0 auto;
+    background-color: #080B2A;
 }
 
 @media screen and (max-width: 950px) {

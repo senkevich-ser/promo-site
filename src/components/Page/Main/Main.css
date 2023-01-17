@@ -10,7 +10,6 @@
 .main__info {
   color: #ffffff;
   padding-top: 130px;
-
 }
 
 .main__titles-bold {
@@ -33,7 +32,7 @@
 .main__discharge{
   width: 427px;
   height: 38px;
-  margin-top: 24px;
+  margin: 24px auto 0;
   background-image: url('../../../images/discharge.svg'),url('../../../images/discharge2.svg');
   background-repeat: no-repeat;
   background-position: left top, center;
@@ -105,6 +104,81 @@ margin: 32px 0 0 0;
     max-width: 400px;
   }
   .main__connectButtons{
+    max-width: 350px;
     justify-content: space-between;
   }
+  .main__titles-bold {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .main__titles-normal {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .main__discharge{
+    width: 340px;
+    height: 38px;
+  }
+  .main__titles{
+    max-width: 340px;
+    /* margin: 0 auto; */
+  }
+  .main__description{
+    font-size: 14px;
+    margin: 32px auto 0;
+    max-width: 340px;
+
+    }
+
+    .main__choiceButtonsTitles{
+      margin: 40px 0 0 0;
+      font-size: 20px;
+    }
+
+    .main__choiceButtons{
+      margin: 40px 0 0 0;
+      max-width: 340px;
+    }
+    .main__info {
+      margin: 0 auto;
+
+    }
+}
+
+@media screen and (max-width: 580px) {
+  .main{
+    max-width: 320px;
+  }
+  .main__connectButtons{
+    max-width: 300px;
+    justify-content: space-between;
+    margin: 32px auto 0;
+  }
+
+  .main__discharge{
+    width: 300px;
+    height: 38px;
+  }
+  .main__titles{
+    max-width: 300px;
+    /* margin: 0 auto; */
+  }
+  .main__description{
+    font-size: 14px;
+    margin: 32px auto 0;
+    max-width: 300px;
+
+    }
+
+    .main__choiceButtonsTitles{
+      margin: 40px 0 0 0;
+      font-size: 20px;
+    }
+
+    .main__choiceButtons{
+      margin: 40px 0 0 0;
+      max-width: 300px;
+    }
 }

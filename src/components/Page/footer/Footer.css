@@ -163,6 +163,11 @@
   .footer__subtitles {
     margin: 0 0 5px 0;
   }
+  .footer__copyright {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+  }
 
 }
 
@@ -195,6 +200,20 @@
 @media screen and (max-width: 470px) {
   .footer{
     max-width: 380px;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  .footer{
+    max-width: 330px;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+  .footer{
+    max-width: 300px;
   }
 
 }
