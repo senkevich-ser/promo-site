@@ -102,15 +102,20 @@
   padding: 0 16px 10px;
 }
 
-@media screen and (max-width: 500px) {
-  .card{
-    transform: scale(0.9,0.9);
-   }
+@media screen and (max-width: 550px) {
+  .card_type_auction {
+    max-width: 334px;
+    height: 390px;
+  }
+
 }
 
-@media screen and (max-width: 430px) {
-  .card{
-    transform: scale(0.8,0.8);
-   }
+@media screen and (max-width: 450px) {
+  .card_type_auction {
+    max-width: 304px;
+    height: 363px;
+    padding: 0 8px 5px;
+  }
+
 }
 

@@ -48,3 +48,26 @@
   color: #968ba1;
   width: 100%;
 }
+
+@media screen and (max-width: 550px) {
+  .cardAuction__singleImage {
+    width: 143px;
+    height: 231px;
+  }
+  .cardAuction__columnImage {
+    width: 143px;
+    height: 109px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cardAuction__singleImage {
+    width: 137px;
+    height: 215px;
+  }
+  .cardAuction__columnImage {
+    width: 137px;
+    height: 102px;
+  }
+
+}

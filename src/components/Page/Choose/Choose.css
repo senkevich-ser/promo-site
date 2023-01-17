@@ -69,8 +69,8 @@
     top: 10%;
     left: 15%;
     z-index: -1;
-    width: 327px;
-    height: 327px;
+    width: 227px;
+    height: 227px;
     margin: 0;
   }
 }
@@ -86,15 +86,6 @@
     line-height: 24px;
   }
 
-  .choose__image {
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    z-index: -1;
-    width: 327px;
-    height: 327px;
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 560px) {
@@ -108,14 +99,10 @@
     line-height: 20px;
   }
 
-  .choose__image {
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    z-index: -1;
-    width: 240px;
-    height: 240px;
-    margin: 0;
+ .choose__image {
+
+    width: 187px;
+    height: 187px;
   }
 
   .choose__title {

@@ -44,6 +44,19 @@
   cursor: pointer;
 }
 
+.favorite_button{
+  background-color: inherit;
+  width: 186px;
+  height: 54px;
+  border: solid 2px #15BFFD;
+  box-sizing: border-box;
+  color: #15BFFD;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
 
 @media screen and (max-width: 1380px) {
   .nav__mainBlock{
@@ -63,7 +76,9 @@
 
 @media screen and (max-width: 880px) {
   .ant-btn-primary{
-    transform: scale(0.9,0.9);
+    width: 45%;
+    font-size: 12px;
+    padding: 4px 10px;
    }
    .ant-btn-text{
     font-size: 14px;
@@ -82,7 +97,7 @@
     padding: 0px 5px;
    }
    .ant-btn-primary{
-    transform: scale(0.8,0.8);
+    padding: 4px 8px;
    }
 
    .nav__mainBlock{

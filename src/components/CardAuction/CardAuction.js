@@ -19,7 +19,7 @@ function CardAuction(props) {
           <div className="cardAuction__images cardAuction__columnImages">
             <div
               className="cardAuction__image cardAuction__columnImage"
-              style={{ backgroundImage: `url(${props.dataCard.images[1]})` }}
+              style={{ backgroundImage: `url(${props.dataCard.images[1]})`}}
             ></div>
             <div
               className="cardAuction__image cardAuction__columnImage"
@@ -33,7 +33,7 @@ function CardAuction(props) {
         {props.isRoundCheckBox && <LikeCheckBox
           dataCard={props.dataCard}
         />}
-        <Button style={{ width: "50%" }} type="primary">
+        <Button  type="primary">
           Добавить в корзину
         </Button>
       </div>
