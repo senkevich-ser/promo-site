@@ -76,7 +76,6 @@
 
 @media screen and (max-width: 880px) {
   .ant-btn-primary{
-    width: 45%;
     font-size: 12px;
     padding: 4px 10px;
    }
