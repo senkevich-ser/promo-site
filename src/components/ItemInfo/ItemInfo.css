@@ -52,3 +52,26 @@
 .itemInfo__rating{
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1300px) {
+  .itemInfo__rightInfo {
+    font-family: 'ClashDisplay-Semibold';
+    padding: 0 0 0 20px;
+}
+}
+@media screen and (max-width: 980px) {
+  .itemInfo__wapper {
+    padding: 15px 20px;
+}
+}
+@media screen and (max-width: 750px) {
+  .itemInfo__wapper {
+    flex-direction: column;
+}
+.carousel-root {
+  width: 100%;
+}
+.itemInfo__rightInfo{
+  width: 100%;
+}
+}
