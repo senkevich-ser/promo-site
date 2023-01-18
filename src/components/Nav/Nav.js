@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
-import {
-  headerRoundButtonStyles,
-  circleButtonStyles,
-  headerSearchButtonStyles,
-} from "../styles";
 import "./Nav.css";
 
 function Nav(props) {
   const [buttonsData, setButtonsData] = useState({});
+
+
   useEffect(() => {
     setButtonsData(props.headerTextButtons);
   }, [])
@@ -34,19 +31,19 @@ function Nav(props) {
       <Link to="/*">
         <Button
           type="primary"
-          style={headerSearchButtonStyles}
+          className="nav__searchButton smallBtnSize"
           shape="circle"
         ></Button>
         </Link>
         <Link to="/saved">
-          <Button type="primary" style={headerRoundButtonStyles} shape="round">
+          <Button type="primary" className="nav__bigButton bigBtnSize" shape="round">
             Favorites Goods
           </Button>
         </Link>
         <Link to="/item">
           <Button
             type="primary"
-            style={circleButtonStyles}
+            className="nav__loadButton smallBtnSize"
             shape="circle"
           ></Button>
         </Link>

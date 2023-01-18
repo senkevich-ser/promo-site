@@ -57,6 +57,46 @@
   text-align: center;
 }
 
+.nav__searchButton{
+  background-color: inherit;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  background-image: url(https://i.postimg.cc/tC0StpSx/search-Icon.png);
+}
+
+.nav__loadButton {
+  background-color: #15BFFD;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  background-image: url(https://i.postimg.cc/sX4ddx0b/Icon.png);
+
+}
+
+.nav__bigButton {
+  background-color: inherit;
+  border: solid 2px #15BFFD;
+  box-sizing: border-box;
+  color: #15BFFD;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.smallBtnSize{
+  width: 54px;
+  height: 54px;
+ }
+
+ .bigBtnSize{
+  width: 186px;
+  height: 54px;
+ }
+
 
 @media screen and (max-width: 1380px) {
   .nav__mainBlock{
@@ -74,21 +114,21 @@
   }
 }
 
-@media screen and (max-width: 880px) {
-  .ant-btn-primary{
-    font-size: 12px;
-    padding: 4px 10px;
-   }
-   .ant-btn-text{
-    font-size: 14px;
-   }
-}
+
 
 @media screen and (max-width: 750px) {
-  .ant-btn-text{
-    font-size: 12px;
-    padding: 4px 10px;
-   }
+  .nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav__mainBlock{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .nav__searchBlock {
+    width: 70%;
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -100,14 +140,63 @@
    }
 
    .nav__mainBlock{
-    width: 45%;
+    width: 100%;
   }
   .nav__searchBlock {
-    width: 55%;
+    width: 70%;
   }
 
   .nav{
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 650px) {
+
+  .nav__searchBlock {
+    width: 75%;
+  }
+
+}
+@media screen and (max-width: 550px) {
+  .nav__searchButton{
+    background-size: 50%;
+  }
+  .smallBtnSize{
+    width: 44px;
+    height: 44px;
+   }
+
+   .bigBtnSize{
+    width: 166px;
+    height: 44px;
+   }
+
+}
+
+@media screen and (max-width: 450px) {
+  .nav__searchButton{
+    background-size: 70%;
+  }
+
+  .nav__loadButton {
+   margin-left: 11px;
+
+  }
+  .smallBtnSize{
+    width: 34px;
+    height: 34px;
+   }
+
+   .bigBtnSize{
+    width: 146px;
+    height: 34px;
+    font-size: 16px;
+   }
+   .nav__searchBlock {
+    width: 100%;
+  }
+
+}
+
 

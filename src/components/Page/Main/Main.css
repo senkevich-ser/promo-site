@@ -101,7 +101,7 @@ margin: 32px 0 0 0;
 
 @media screen and (max-width: 780px) {
   .main{
-    max-width: 400px;
+    max-width: 560px;
   }
   .main__connectButtons{
     max-width: 350px;
@@ -142,15 +142,20 @@ margin: 32px 0 0 0;
       max-width: 340px;
     }
     .main__info {
-      margin: 0 auto;
+      margin: 0 auto 0 0;
       padding-top: 40px;
 
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 650px) {
   .main{
-    max-width: 320px;
+    max-width: 460px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main{
+    max-width: 420px;
   }
   .main__connectButtons{
     max-width: 300px;
@@ -182,4 +187,16 @@ margin: 32px 0 0 0;
       margin: 40px 0 0 0;
       max-width: 300px;
     }
+
+    @media screen and (max-width: 450px) {
+      .header{
+        max-width: 280px;
+      }
+    }
+}
+
+@media screen and (max-width: 450px) {
+  .main{
+    max-width: 300px;
+  }
 }

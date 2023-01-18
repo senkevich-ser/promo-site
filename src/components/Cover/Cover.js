@@ -16,10 +16,10 @@ function Cover(props) {
     }
   };
 
-  useEffect(() => {
+ /*  useEffect(() => {
     console.log(width);
     console.log(height)
-  })
+  }) */
 
   /* const ellipseParams = {
     amount: 30,

@@ -81,7 +81,7 @@ function Auction(props) {
         })}
       </div>
       {isMoreVisible && (<Space wrap>
-        <Button type="primary" style={headerRoundButtonStyles} shape="round" onClick={handleMoreClick} >Explore more</Button>
+        <Button type="primary" className="nav__bigButton bigBtnSize" shape="round" onClick={handleMoreClick} >Explore more</Button>
       </Space>)}
     </section>
   )

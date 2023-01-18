@@ -5,6 +5,7 @@
   padding: 0 0 90px 0;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .auction__title {
   font-family: "ClashDisplay-Semibold";
@@ -59,4 +60,8 @@
   .auction__card-container{
     grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
   }
+  .auction__subtitle {
+    max-width: 300px;
+  }
+
 }

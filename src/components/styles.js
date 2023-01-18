@@ -1,43 +1,7 @@
 
 
-const circleButtonStyles = {
-  backgroundColor: '#15BFFD',
-  width: '54px',
-  height: '54px',
-  boxSizing: 'border-box',
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'center',
-  backgroundSize: '40%',
-  backgroundImage: 'url(https://i.postimg.cc/sX4ddx0b/Icon.png)',
 
-}
 
-const headerRoundButtonStyles = {
-  backgroundColor: 'inherit',
-  width: '186px',
-  height: '54px',
-  border: ' solid 2px #15BFFD',
-  boxSizing: 'border-box',
-  color: '#15BFFD',
-  weight: "500px",
-  fontSize: '20px',
-  lineHeigh: '24px',
-  textAlign: 'center',
-  /* margin: '0 20px', */
-
-}
-
-const headerSearchButtonStyles = {
-  backgroundColor: 'inherit',
-  width: '54px',
-  height: '54px',
-  boxSizing: 'border-box',
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'center',
-  backgroundSize: '40%',
-  backgroundImage: 'url(https://i.postimg.cc/tC0StpSx/search-Icon.png)',
-
-}
 const mainRoundButtonStyles = {
   backgroundColor: '#15BFFD',
   width: '186px',
@@ -101,10 +65,7 @@ const cardBrandName = {
 
 
 export {
-  circleButtonStyles,
-  headerRoundButtonStyles,
   mainRoundButtonStyles,
-  headerSearchButtonStyles,
   createMainButtonStyles,
   chiceBlueButtonStyles,
   chiceTransparentButtonStyles,
