@@ -53,7 +53,7 @@ function ItemInfo(props) {
             {props.isRoundCheckBox && <LikeCheckBox
               dataCard={dataCard}
             />}
-            <Button style={{ width: "50%" }} type="primary">
+            <Button type="primary">
               Добавить в корзину
             </Button>
           </div>

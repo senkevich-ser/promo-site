@@ -67,11 +67,47 @@
 @media screen and (max-width: 750px) {
   .itemInfo__wapper {
     flex-direction: column;
+    padding: 0;
+}
+
+.itemInfo__rightInfo{
+  width: 100%;
+  padding: 0;
+  max-width: 560px;
 }
 .carousel-root {
   width: 100%;
+  max-width: 560px;
+
 }
+}
+
+@media screen and (max-width: 650px) {
+
 .itemInfo__rightInfo{
-  width: 100%;
+  max-width: 480px;
+}
+.carousel-root {
+  max-width: 480px;
 }
 }
+
+@media screen and (max-width: 550px) {
+
+  .itemInfo__rightInfo{
+    max-width: 420px;
+  }
+  .carousel-root {
+    max-width: 420px;
+  }
+  }
+
+  @media screen and (max-width: 450px) {
+
+    .itemInfo__rightInfo{
+      max-width: 280px;
+    }
+    .carousel-root {
+      max-width: 280px;
+    }
+    }

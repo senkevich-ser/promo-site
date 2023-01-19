@@ -209,6 +209,13 @@
     max-width: 330px;
   }
 
+  .footer__ColumnWrapper:nth-of-type(3) {
+    min-width: 80px;
+  }
+  .footer__ColumnWrapper {
+    min-width: 70px;
+  }
+
 }
 
 @media screen and (max-width: 380px) {
