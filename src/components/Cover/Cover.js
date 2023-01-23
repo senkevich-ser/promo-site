@@ -4,9 +4,11 @@ import "./Cover.css";
 import Star from "./Star/Star";
 
 function Cover(props) {
+const pageWidth = document.documentElement.scrollWidth
+const pageHeight = document.documentElement.scrollHeight
 
-  const { width } = useWindowDimensions();
-  const { height } = useScreenDimensions();
+  /* const { width } = useWindowDimensions();
+  const { height } = useScreenDimensions(); */
   const starsParams = {
     amount: 50,
     size: {
@@ -16,10 +18,10 @@ function Cover(props) {
     }
   };
 
- /*  useEffect(() => {
-    console.log(width);
-    console.log(height)
-  }) */
+   useEffect(() => {
+     console.log(pageWidth);
+     console.log(pageHeight)
+   },[pageWidth,pageHeight])
 
   /* const ellipseParams = {
     amount: 30,
@@ -57,10 +59,16 @@ function Cover(props) {
     <>
       <div className="background">
         {props.children}
-        {/*  <div className="ellipse1"></div>
-        <div className="ellipse1 ellipse2"></div>
-        <div className="ellipse1 ellipse3"></div>
-        {Boolean(props.vector)&&(<div className="vector"></div>)} */}
+        <div className="ellipse ellipse1"></div>
+        <div className="ellipse ellipse2"></div>
+        <div className="ellipse ellipse3"></div>
+        <div className="ellipse ellipse5"></div>
+        <div className="ellipse ellipse6"></div>
+        <div className="ellipse ellipse7"></div>
+        <div className="ellipse ellipse8"></div>
+        <div className="ellipse ellipse9"></div>
+        <div className="ellipse ellipse10"></div>
+        {Boolean(props.vector) && (<div className="vector"></div>)}
         {starStyles(starsParams).map((star, i) => {
           return (
             <Star style={star} key={i} />

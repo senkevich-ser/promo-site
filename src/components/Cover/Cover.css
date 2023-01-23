@@ -6,27 +6,56 @@
   margin:0 auto;
 }
 
-.ellipse1 {
+.ellipse {
   position: absolute;
   width: 377px;
   height: 377px;
   border-radius: 50%;
   background-color: #5f6cbd;
-  left: -5em;
-  top: 177px;
   filter: blur(150px);
   z-index: -1;
 }
+.ellipse1 {
+  left: -2%;
+  top: 177px;
+}
 .ellipse2 {
-  position: absolute;
   left: 773px;
   top: 539px;
 }
 .ellipse3 {
-  position: absolute;
   left: 1223px;
   top: 55px;
 }
+.ellipse4 {
+  left: 73px;
+  top: 1539px;
+}
+.ellipse5 {
+  left: 1223px;
+  top: 1355px;
+}
+.ellipse6 {
+  left: 973px;
+  bottom: 867px;
+}
+.ellipse7 {
+  left: 123px;
+  bottom: 967px;
+}
+.ellipse8 {
+  left: -72px;
+  bottom: 736px;
+}
+.ellipse9 {
+  left: 1223px;
+  bottom: 54px;
+}
+.ellipse10 {
+  left: 173px;
+  bottom: 155px;
+}
+
 .vector {
   position: absolute;
   width: 514px;
@@ -45,7 +74,7 @@
     left: 59em;
   }
   .ellipse1 {
-    left: 0;
+    left: 80px;
   }
   .ellipse2 {
     left: 473px;
@@ -55,6 +84,14 @@
     left: 923px;
     top: 55px;
   }
+  .ellipse5 {
+    left: 873px;
+    top: 1355px;
+  }
+  .ellipse9 {
+    left: 873px;
+    bottom: 54px;
+  }
 }
 @media screen and (max-width: 1500px) {
   .vector {
@@ -62,10 +99,87 @@
   }
   .ellipse2 {
     left: 273px;
-    top: 539px;
+    top: 439px;
   }
   .ellipse3 {
-    left: 823px;
+    left: 623px;
     top: 55px;
+  }
+  .ellipse5 {
+    left: 573px;
+    top: 1355px;
+  }
+  .ellipse6 {
+    left: 473px;
+  }
+
+  .ellipse9 {
+    left: 573px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .vector {
+    left: 56em;
+  }
+  .ellipse3 {
+    display: none;
+  }
+
+  .ellipse5 {
+    display: none;
+  }
+  .ellipse6 {
+    display: none;
+  }
+
+  .ellipse9 {
+    display: none;
+  }
+  .ellipse8 {
+    left: 382px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .vector {
+    left: 56em;
+  }
+  .ellipse2 {
+    display: none;
+  }
+  .ellipse4 {
+    left: 73px;
+  }
+  .ellipse7 {
+    left: 23px;
+  }
+  .ellipse8 {
+    left: 182px;
+  }
+  .ellipse10 {
+    left: 73px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ellipse1 {
+    left: 20px;
+    width: 300px;
+  }
+  .ellipse4 {
+    display: none;
+  }
+  .ellipse7 {
+    left: 20px;
+    width: 300px;
+  }
+  .ellipse8 {
+    left: 20px;
+    width: 300px;
+  }
+  .ellipse10 {
+    left: 20px;
+    width: 300px;
   }
 }
