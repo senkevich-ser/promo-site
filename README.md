@@ -1,19 +1,15 @@
-# Дипломный проект (клиентская часть)
+# Тестовое задание
 
 ## Описание
 
-Данный проект является дипломной работой,
-выполненной при обучении на образовательной платформе  
-[Яндекс.Практикум](https://praktikum.yandex.ru/)
-по специальности Веб-разработчик. 
+Данный проект является тестовым заданием для получения оффера для при преме на работу в IT-компанию 
 
-Серверная часть проекта находится в репозитории
-[movies-explorer-api](https://github.com/senkevich-ser/movies-explorer-api.git)/
+Обработка данных по избранным карточкам реализоаная с помощью локальной памяти клиента
 
 
 ## Адрес клиентской части
 
-https://siarhey.nomoredomains.xyz
+https://9675051202.store
 
 
 ## Технологии
@@ -25,11 +21,11 @@ https://siarhey.nomoredomains.xyz
 
 1. Клонировать репозиторий
 
-    `git clone https://github.com/senkevich-ser/movies-explorer-frontend.git`
+    `git clone https://github.com/senkevich-ser/promo-site.git`
 
 2. Установить зависимости
 
-    `cd movies-explorer-frontend`
+    `cd promo-site`
 
     `npm install`
 
