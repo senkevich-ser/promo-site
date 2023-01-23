@@ -39,7 +39,7 @@ function Main(props) {
           <Button type="primary" onClick={props.filterCards} style={chiceTransparentButtonStyles} shape="round" >Home Decoration</Button>
         </div>
       </div>
-      {/* <div className='main__cards'>
+      <div className='main__cards'>
         {props.allCards.slice(0, 2).map((card, i) => {
           if (i === 0) {
             return (
@@ -51,7 +51,7 @@ function Main(props) {
             )
           }
         })}
-      </div> */}
+      </div>
     </section>
   )
 }

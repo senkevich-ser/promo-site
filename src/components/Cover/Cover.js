@@ -1,12 +1,9 @@
 import React, { useEffect } from "react";
-import { useScreenDimensions, useWindowDimensions } from "../../hooks/useDimensions";
+/* import { useScreenDimensions, useWindowDimensions } from "../../hooks/useDimensions"; */
 import "./Cover.css";
 import Star from "./Star/Star";
 
 function Cover(props) {
-const pageWidth = document.documentElement.scrollWidth
-const pageHeight = document.documentElement.scrollHeight
-
   /* const { width } = useWindowDimensions();
   const { height } = useScreenDimensions(); */
   const starsParams = {
@@ -18,10 +15,10 @@ const pageHeight = document.documentElement.scrollHeight
     }
   };
 
-   useEffect(() => {
+   /* useEffect(() => {
      console.log(pageWidth);
      console.log(pageHeight)
-   },[pageWidth,pageHeight])
+   },[pageWidth,pageHeight]) */
 
   /* const ellipseParams = {
     amount: 30,
