@@ -69,9 +69,9 @@
   /* background-size: 100%; */
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1500px) {
   .vector {
-    left: 59em;
+    left: 803px;
   }
   .ellipse1 {
     left: 80px;
@@ -93,9 +93,12 @@
     bottom: 54px;
   }
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1380px) {
   .vector {
-    left: 56em;
+    left: 603px;
+    top: 220px;
+    width: 409px;
+    height: 523px;
   }
   .ellipse2 {
     left: 273px;
@@ -117,11 +120,13 @@
     left: 573px;
   }
 }
+@media screen and (max-width: 1100px) {
+  .vector {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1000px) {
-  .vector {
-    left: 56em;
-  }
   .ellipse3 {
     display: none;
   }
@@ -142,9 +147,6 @@
 }
 
 @media screen and (max-width: 700px) {
-  .vector {
-    left: 56em;
-  }
   .ellipse2 {
     display: none;
   }

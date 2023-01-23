@@ -16,7 +16,7 @@
   border-radius: 16px;
   border: 1px solid #15bffd;
   z-index: 1;
-  /* opacity: 70%; */
+  opacity: 80%;
 }
 .card__effect {
   position: absolute;

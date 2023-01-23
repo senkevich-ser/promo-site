@@ -40,7 +40,7 @@ function Nav(props) {
             Favorites Goods
           </Button>
         </Link>
-        <Link to="/item">
+        <Link to="/*">
           <Button
             type="primary"
             className="nav__loadButton smallBtnSize"
